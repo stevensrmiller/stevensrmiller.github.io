@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
+	<title>ExLumina.StampGadgets Namespace</title>
+
+	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
+	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shCore_helixoft.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shBrushVb.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shBrushCSharp.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shBrushFSharp.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shBrushCpp.js" type="text/javascript"></script>
+	<script src="SyntaxHighlighter/scripts/shBrushJScript.js" type="text/javascript"></script>
+	<link href="SyntaxHighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="SyntaxHighlighter/styles/shThemeMsdnLW.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>				
+
+	<script type="text/javascript">
+<!--
+if (self.name != "vbdocright") {
+	if (location.search != "?toc=no") {
+		var filename = location.pathname.replace(/\\/g, "/");
+		filename = filename.substring(filename.lastIndexOf('/')+1);
+		location.replace("index.html#" + filename);
+	} 
+}
+
+function replaceTitleAndUrl(win, title, url) {
+	if(history.replaceState) {
+		win.history.replaceState(null, title, url);
+	} else {
+		win.document.title = document.title;
+		win.location.replace(url);
+	}
+}
+//-->
+	</script>	
+
+ <link rel="stylesheet" type="text/css" href="vsdocman_overrides.css"></link> 
+</head>
+
+<body style="direction: ltr;">
+	<script type="text/javascript">
+		try {
+			if (location.search != "?toc=no") {
+				parent.document.title = document.title;
+				var filename = location.pathname.replace(/\\/g, "/");
+				filename = filename.substring(filename.lastIndexOf('/')+1);
+				if (window.parent.location.search == null || window.parent.location.search != "?" + filename) {
+					if (window.parent.location.hash == null || window.parent.location.hash != "#" + filename) {
+						replaceTitleAndUrl(window.parent, document.title, "index.html#" + filename);
+					}
+				}
+			}
+		} catch (ex) {}
+	</script>
+	<div id="topic">
+<!--HEADER START-->
+  <div id="header">
+  	<div id="runningHeaderText">Assembly-CSharp Reference</div>
+  	<h1 class="title">ExLumina.StampGadgets Namespace</h1>
+  	<div id="headerLinks">
+
+
+		</div>
+		<hr />
+	</div>
+<!--HEADER END-->
+    
+		<div id="mainSection">
+      <div id="mainBody">
+        <p />
+       
+       
+        A system for defining a reusable abstraction that can represent a large
+variety of puzzle/escape game objects. The abstractions, called &quot;Gadgets,&quot;
+use events to communicate with observers that draw pictures and render
+sounds when the human player interacts with them. A system of condition
+lists, paired with action lists, decouples the Gadgets at the code level,
+while allowing them to be connected logically in a game context.
+<p>
+The condition list was created by Richard Stamp. The rotor-based Gadget
+system and C# event notifiers were created by Stevens Miller
+</p>
+
+
+
+        <br /><strong>Assembly:</strong> Assembly-CSharp (in Assembly-CSharp.dll)
+
+
+
+
+
+
+
+
+	
+	
+	<div id="syntaxCodeBlocks">
+		
+
+
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Classes</a></span>
+		<div><hr /></div>
+	</div>
+
+	<div id="ClassSection" class="section">	
+  <table class="memberListTable">
+    <tr>
+      <th></th>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+
+
+<!-- Classes -->
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000001.html">ComboGadget</a>
+	  </td>
+	  <td>
+
+A concrete Gadget that supports any number of &quot;rotors,&quot; which
+can have one of a specified number of states. For example, an
+on/off button could be based on a ComboGadget with one rotor
+that has two states. A four-digit bicycle lock could be based
+on a ComboGadget with four rotors that have ten states.
+
+A state is defined by an integer, but can be assigned any sort
+of appearance by a GadgetObserver. So, the on/off button's one
+rotor has either state = 0 or state = 1. But on the screen, the
+state = 0 could be presented as the button in the up position,
+and state = 1 could be presented as the button in the down
+position. Likewise, a state could be the position of a knob, or
+it could be the angle of a lever, or it could be one of several
+different shapes or pictures.
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000005.html">ConditionList</a>
+	  </td>
+	  <td>
+
+Maintains a list of Gadgets that all report when their status
+changes from completed to not completed, or vice versa. Also
+maintains a list of actions. The actions are invoked when the
+completion requirements of the list are met, which can be when
+all Gadgets report that they are completed, or when any one of
+them reports that it is completed, base on the setting of the
+allMustBeCompleted flag.
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000000B.html">Gadget</a>
+	  </td>
+	  <td>
+
+<p>
+Base class for all Gadgets. Subclasses can add as many additional
+flags and states as they wish.
+</p>
+All Gadgets have these members:
+<table width="100%" cellspacing="2" cellpadding="5"><tr><th align="left">Member</th><th align="left">Description</th></tr><tr valign="top"><td>OnConditionChanged</td><td>
+        A list of ConditionLists that this Gadget will notify when its completed
+        condition changes.
+    </td></tr><tr valign="top"><td>OnUpdate</td><td>
+        A list of GadgetObservers that this Gadget will notify when any
+        client code interacts with it.
+    </td></tr><tr valign="top"><td>stayCompleted</td><td>
+        When true, locks the Gadget into its completed state when it
+        is completed for the first time.
+    </td></tr><tr valign="top"><td>hasCompleted</td><td>
+        Indicates the Gadget has ever entered its completed state.
+        This is public for debugging. Don't change it.
+    </td></tr><tr valign="top"><td>isCompleted</td><td>
+        Indicates the Gadget is in its completed state.
+        This is public for debugging. Don't change it.
+        For actual production code, use  the IsCompleted property instead.
+    </td></tr><tr valign="top"><td>IsCompleted</td><td>
+        Indicates the Gadget is in its completed state.
+        For clinet code, this is a read-only property. Internally, when it is set,
+        it will always notify all GadgetObservers that have subscribed to the OnUpdate
+        event (and any other objects that have subscribed to it, as well). If the
+        completed state changes when it is set (that is, when a not completed Gadget
+        becomes completed, or a completed Gadget becomes not completed) it will notify
+        all ConditionLists that have subscribed to the OnConditionChanged event (and
+        any other objects that have subscribed to it, as well).
+    </td></tr></table>
+By contract, all Gadgets start in the not completed state.
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000014.html">GadgetObserver</a>
+	  </td>
+	  <td>
+
+Abstract parent class for classes that present a human-friendly
+visual (or, possibly, audible) form of a Gadget. Whenever a
+Gadget's Interact method is called, whether it changes state or
+not, a GadgetObserver assigned to that Gadget will have its
+UpdateListener method called.
+<p>
+Note that the GadgetObserver presumes there is a Gadget on its
+GameObject, so it finds it and assigns the GadgetListener method
+to its OnUpdate event. Subclasses of this class will need to cast
+the Gadget to the particular subclass of Gadget they observe. They
+will also need to provide a concrete implementation of the
+UpdateListener method.
+</p>
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000018.html">Knob</a>
+	  </td>
+	  <td>
+
+Simple class to put on a child GameObject of a GameObject that has
+a Knobs GadgetObserver on it. Reports to the Knobs objects when a
+Knob has been clicked, passing its Knob number, so the Knobs object
+can use it in a call to its Gadget's Interact method, and so the
+Knobs object can update this Knob's transform (to make it appear to
+turn).
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000001A.html">Knobs</a>
+	  </td>
+	  <td>
+
+An observer for a ComboGadget that simulates a set of rotation knobs.
+Put this on a GameObject with a ComboGadget. Add as many child
+GameObjects as there are rotors in the ComboGadget, and add a Knob
+component to each child GameObject. Set each Knob's number to
+correspond to its rotor.
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000020.html">LockingComboGadget</a>
+	  </td>
+	  <td>
+
+This is an example of how to add a state to an existing Gadget.
+This class subclasses the ComboGadget and adds a &quot;locked&quot; state.
+By using a ConditionList, a set of conditions, in the form of
+Gadgets that must be completed, must be met to &quot;unlock&quot; this
+Gadget. Until it is unlocked, the Gadget does not respond to
+Interact calls by changing any of its rotors. When the list of
+conditions is met, the ConditionList can call this object's
+SetUnLocked method to unlock at, at which point it begins
+passing calls to its Interact method up to the parent class's
+Interact method.
+<p>
+Note that this class could respond to interactions any way it
+wished to, instead of just ignoring the which and what parameters.
+Any subclass of Gadget can use this approach to have as many
+state variables as it wants, all of which can be used to decide
+how the Gadget responds to a call to its Interact method.
+</p>
+<p>
+This implementation is in consideration of the fairly common
+scenario where a game item, like combination lock, cannot be
+interacted with until some prior conditions are met, such as
+turning on a power supply.
+</p>
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000024.html">PushButton</a>
+	  </td>
+	  <td>
+
+A simple GadgetObserver to present a two-state, one-rotor ComboGadget
+as an on/off pushbutton.
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000029.html">Safe</a>
+	  </td>
+	  <td>
+
+A LockingComboGadget's GadgetObserver that presents a small iron safe.
+The safe reacts four different ways to interations, depending upon the
+combination of the LockingComboGadget's two state variables.
+<table width="100%" cellspacing="2" cellpadding="5"><tr><th align="left">Locked</th><th align="left">Completed</th><th align="left">Interaction Response</th></tr><tr valign="top"><td>false</td><td>false</td><td>
+        Safe makes a muffled &quot;thunk&quot; sound, and stays closed.
+    </td></tr><tr valign="top"><td>false</td><td>true</td><td>
+        Safe makes a hollow &quot;clank&quot; sound, and stays open.
+    </td></tr><tr valign="top"><td>true</td><td>false</td><td>
+        Safe shuts with a slamming sound.
+    </td></tr><tr valign="top"><td>true</td><td>true</td><td>
+        Safe opens with a squeaking noise.
+    </td></tr></table>
+
+		</td>
+	</tr>
+
+<!-- Classes End -->
+
+<!-- Standard Modules -->
+
+<!-- Standard Modules End -->
+
+  </table>
+
+  <a href="#mainBody">
+    Top
+  </a>
+
+	</div>					
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Applies to</a></span>
+		<div><hr /></div>
+	</div>
+
+	<div id="frameworksSection" class="section">	
+  <h4 class="subHeading">.NET Framework</h4>Supported in: 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1<br />
+
+
+
+
+
+
+
+
+
+
+	
+	
+	</div>					
+</div>
+
+
+
+			</div>
+			</div>
+      <div id="footer">
+      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      </div>
+    </div>
+  	<script type="text/javascript">
+<!--
+	try {
+		parent.frames["vbdocswitch"].expandLinkInToc(location.href);
+	} catch (ex) {}
+//-->
+		</script>	
+  </body>
+</html>

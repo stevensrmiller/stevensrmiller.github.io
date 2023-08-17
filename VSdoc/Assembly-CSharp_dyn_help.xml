@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DynamicHelp xmlns="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" xsi:schemaLocation="http://msdn.microsoft.com/vsdata/xsd/vsdh.xsd">	
+   <LINKGROUP ID="Assembly-CSharp" Title="Assembly-CSharp Reference Help" Priority="2100">
+      <GLYPH Expanded="vs:/ctxhelp_show.gif" Collapsed="vs:/ctxhelp_hide.gif"/>
+   </LINKGROUP>
+
+
+   <Context>
+      <Keywords>
+         <KItem Name="Assembly-CSharp Reference" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000030.html" LinkGroup="Assembly-CSharp">Assembly-CSharp Reference</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ComboGadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000001.html" LinkGroup="Assembly-CSharp">ComboGadget Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000005.html" LinkGroup="Assembly-CSharp">ConditionList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.DoUpdate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000013.html" LinkGroup="Assembly-CSharp">DoUpdate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000000.html" LinkGroup="Assembly-CSharp">ExLumina.StampGadgets Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000B.html" LinkGroup="Assembly-CSharp">Gadget Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.GadgetObserver" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000014.html" LinkGroup="Assembly-CSharp">GadgetObserver Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ComboGadget.Interact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000004.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.ComboGadget}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.Interact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000012.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.Gadget}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.LockingComboGadget.Interact" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000022.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.LockingComboGadget}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.IsCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000011.html" LinkGroup="Assembly-CSharp">IsCompleted Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knob" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000018.html" LinkGroup="Assembly-CSharp">Knob Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001A.html" LinkGroup="Assembly-CSharp">Knobs Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.LockingComboGadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000020.html" LinkGroup="Assembly-CSharp">LockingComboGadget Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.OnConditionChanged" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000C.html" LinkGroup="Assembly-CSharp">OnConditionChanged Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.OnUpdate" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000D.html" LinkGroup="Assembly-CSharp">OnUpdate Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.PushButton" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000024.html" LinkGroup="Assembly-CSharp">PushButton Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000029.html" LinkGroup="Assembly-CSharp">Safe Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.LockingComboGadget.SetUnlocked" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000023.html" LinkGroup="Assembly-CSharp">SetUnlocked Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.GadgetObserver.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000016.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001D.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Knobs}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.PushButton.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000027.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.PushButton}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.Start" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002E.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Safe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs.TurnKnob" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001E.html" LinkGroup="Assembly-CSharp">TurnKnob Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.LockingComboGadget.Unlocked" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000021.html" LinkGroup="Assembly-CSharp">Unlocked Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.GadgetObserver.UpdateListener" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000017.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs.UpdateListener" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001F.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Knobs}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.PushButton.UpdateListener" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000028.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.PushButton}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.UpdateListener" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002F.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Safe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList.actionsOnConditionsCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000009.html" LinkGroup="Assembly-CSharp">actionsOnConditionsCompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList.allMustBeCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000007.html" LinkGroup="Assembly-CSharp">allMustBeCompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.clank" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002C.html" LinkGroup="Assembly-CSharp">clank Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs.click" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001B.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.Knobs}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.PushButton.click" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000025.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.PushButton}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.close" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002B.html" LinkGroup="Assembly-CSharp">close Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList.conditions" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000008.html" LinkGroup="Assembly-CSharp">conditions Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.GadgetObserver.gadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000015.html" LinkGroup="Assembly-CSharp">gadget Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.hasCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000F.html" LinkGroup="Assembly-CSharp">hasCompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.isCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000010.html" LinkGroup="Assembly-CSharp">isCompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knob.knobNumber" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000019.html" LinkGroup="Assembly-CSharp">knobNumber Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ComboGadget.numStates" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000002.html" LinkGroup="Assembly-CSharp">numStates Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList.numUncompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000A.html" LinkGroup="Assembly-CSharp">numUncompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.open" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002A.html" LinkGroup="Assembly-CSharp">open Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ComboGadget.rotors" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000003.html" LinkGroup="Assembly-CSharp">rotors Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Knobs.spung" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001C.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.Knobs}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.PushButton.spung" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000026.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.PushButton}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.ConditionList.stayCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000006.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.ConditionList}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Gadget.stayCompleted" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000E.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.Gadget}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Safe.thunk" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002D.html" LinkGroup="Assembly-CSharp">thunk Field</LItem>
+      </Links>
+   </Context>
+   
+
+</DynamicHelp>
+
