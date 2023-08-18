@@ -77,13 +77,23 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        Maintains a list of Gadgets that all report when their status
+        <p>
+Maintains a list of Gadgets that all report when their status
 changes from completed to not completed, or vice versa. Also
 maintains a list of actions. The actions are invoked when the
-completion requirements of the list are met, which can be when
-all Gadgets report that they are completed, or when any one of
-them reports that it is completed, base on the setting of the
+completion requirements of the list change from not being met,
+to being met, or when they change from being met to not being met.
+Either change can occur when all Gadgets report that they are
+completed, or when any one of them reports that it is completed,
+(or when any one of them reports it is not completed, or when
+all of them report theyare completed), based on the setting of the
 allMustBeCompleted flag.
+</p>
+<p>
+When the actions are invoked, each is passed a boolean true or
+false. True means the conditions were met. False means they were
+not met.
+</p>
 
 
         <p /><strong>Namespace:</strong>
@@ -350,22 +360,25 @@ allMustBeCompleted flag.
 	  </td>
 	  <td>
 	
-	Any public method can be called from this action list, by
+	<p>Any public method that takes a single boolean arguent
+can be called from this action list, by
 adding it to the list in the Unity Inspector. Note that
-the state of the entire list is reported. That is, if the
-list requires that all Gadgets be completed (that is, when
+the state of the entire codition list is reported. That is, if
+the list requires that all Gadgets be completed (that is, when
 allMustBeCompleted is true), then when all Gadgets are
 completed, the actions are all called and are passed the
 boolean value true. In that case, if one Gadget later changes
 from being completed to no longer being completed, all of the
-actions are called again, this time being pass the boolean
+actions are called again, this time being passed the boolean
 value false.
-
+</p>
+<p>
 Similarly, if allMustBeCompleted is false, then when all
 Gadgets are not completed, and then one becomes completed,
 all actions are called and are passed the boolean value true.
 Later, if all Gadgets change to being not completed, then all
 actions will be called with the boolean value false.
+</p>
 	
 		</td>
 	</tr>
@@ -385,14 +398,15 @@ actions will be called with the boolean value false.
 	  <td>
 	
 	Typically, you will want all Gadgets on the list to be
-completed before the actions are invoked. Set this true
+completed before the actions are invoked. Set this to true
 when that's what you want. Setting it to false will result
 in the actions being invoked whenever the Gadgets are all
 not completed, and one of them becomes completed. Note that
 a second Gadget becoming completed does NOT invoke the list
 of actions again. It is only when all Gadgets are not completed,
 and one of them reports that it is completed, that the actions
-are invoked.
+are invoked, or when exactly one is completed and it changes to
+report that it is not completed.
 	
 		</td>
 	</tr>
@@ -551,7 +565,7 @@ changes from being completed to no longer being completed.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

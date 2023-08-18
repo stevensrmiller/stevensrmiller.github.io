@@ -83,6 +83,11 @@ Knob has been clicked, passing its Knob number, so the Knobs object
 can use it in a call to its Gadget's Interact method, and so the
 Knobs object can update this Knob's transform (to make it appear to
 turn).
+<p>
+Note that this class is an ordinary subclass of MonoBehaviour, not
+a subclass of GadgetObserver. It will cooperate with a Knobs object,
+which <i>is</i> a subclass of GadgetObserver.
+</p>
 
 
         <p /><strong>Namespace:</strong>
@@ -444,7 +449,7 @@ corresponds to.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

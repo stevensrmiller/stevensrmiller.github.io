@@ -113,7 +113,8 @@ function replaceTitleAndUrl(win, title, url) {
 	  </td>
 	  <td>
 	
-	
+	Tracks when a Gadget that should stay completed has been completed.
+Public for debugging, so don't change this.
 	
 		</td>
 	</tr>
@@ -132,7 +133,9 @@ function replaceTitleAndUrl(win, title, url) {
 	  </td>
 	  <td>
 	
-	
+	Indicates the Gadget is in its completed state.
+This is public for debugging. Don't change it.
+For actual production code, use the IsCompleted property instead.
 	
 		</td>
 	</tr>
@@ -151,7 +154,15 @@ function replaceTitleAndUrl(win, title, url) {
 	  </td>
 	  <td>
 	
-	
+	Set this true when you want the Gadget to &quot;latch.&quot; That is, once it
+is completed, it will stay completed, even if its internal state
+changes. Note that your subclassed Gadget can decide if it wants to
+allow its internal state to change once it has been completed. For
+example, a button when pressed could remain pressed, or you could
+allow the human player to pop the button back up again. If the button
+is a subclass of Gadget and stayCompleted is true, the button will
+remain in the completed condition permanenty after being pressed the
+first time.
 	
 		</td>
 	</tr>
@@ -186,7 +197,7 @@ function replaceTitleAndUrl(win, title, url) {
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

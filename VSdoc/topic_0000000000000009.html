@@ -77,22 +77,25 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        Any public method can be called from this action list, by
+        <p>Any public method that takes a single boolean arguent
+can be called from this action list, by
 adding it to the list in the Unity Inspector. Note that
-the state of the entire list is reported. That is, if the
-list requires that all Gadgets be completed (that is, when
+the state of the entire codition list is reported. That is, if
+the list requires that all Gadgets be completed (that is, when
 allMustBeCompleted is true), then when all Gadgets are
 completed, the actions are all called and are passed the
 boolean value true. In that case, if one Gadget later changes
 from being completed to no longer being completed, all of the
-actions are called again, this time being pass the boolean
+actions are called again, this time being passed the boolean
 value false.
-
+</p>
+<p>
 Similarly, if allMustBeCompleted is false, then when all
 Gadgets are not completed, and then one becomes completed,
 all actions are called and are passed the boolean value true.
 Later, if all Gadgets change to being not completed, then all
 actions will be called with the boolean value false.
+</p>
 
 
         <p /><strong>Namespace:</strong>
@@ -391,7 +394,7 @@ actions will be called with the boolean value false.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

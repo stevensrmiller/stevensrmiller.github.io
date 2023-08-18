@@ -357,7 +357,7 @@ By contract, all Gadgets start in the not completed state.
 	<td>
 
 Indicates the Gadget is in its completed state.
-        For clinet code, this is a read-only property. Internally, when it is set,
+        For client code, this is a read-only property. Internally, when it is set,
         it will always notify all GadgetObservers that have subscribed to the OnUpdate
         event (and any other objects that have subscribed to it, as well). If the
         completed state changes when it is set (that is, when a not completed Gadget
@@ -425,7 +425,8 @@ Indicates the Gadget is in its completed state.
 	</td>
 	<td>
 
-
+Allows a subclass to force an update notification when an interaction
+hasn't changed to the Gadget's state.
 
 	</td>
 </tr>
@@ -527,7 +528,8 @@ rotor, on the lock.)
 	  </td>
 	  <td>
 	
-	
+	C# event to notify listeners that the completed condition of this
+Gadget has changed.
 	
 		</td>
 	</tr>
@@ -547,7 +549,10 @@ rotor, on the lock.)
 	  </td>
 	  <td>
 	
-	
+	C# event to notify listeners that some attempt to interact with this
+Gadget took place, so its state may have changed (or it may not have
+changed, but you want the opportunity to provide feedback to the
+human player).
 	
 		</td>
 	</tr>
@@ -610,7 +615,8 @@ rotor, on the lock.)
 	  </td>
 	  <td>
 	
-	
+	Tracks when a Gadget that should stay completed has been completed.
+Public for debugging, so don't change this.
 	
 		</td>
 	</tr>
@@ -629,7 +635,9 @@ rotor, on the lock.)
 	  </td>
 	  <td>
 	
-	
+	Indicates the Gadget is in its completed state.
+This is public for debugging. Don't change it.
+For actual production code, use the IsCompleted property instead.
 	
 		</td>
 	</tr>
@@ -648,7 +656,15 @@ rotor, on the lock.)
 	  </td>
 	  <td>
 	
-	
+	Set this true when you want the Gadget to &quot;latch.&quot; That is, once it
+is completed, it will stay completed, even if its internal state
+changes. Note that your subclassed Gadget can decide if it wants to
+allow its internal state to change once it has been completed. For
+example, a button when pressed could remain pressed, or you could
+allow the human player to pop the button back up again. If the button
+is a subclass of Gadget and stayCompleted is true, the button will
+remain in the completed condition permanenty after being pressed the
+first time.
 	
 		</td>
 	</tr>
@@ -742,7 +758,7 @@ rotor, on the lock.)
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">
