@@ -160,7 +160,7 @@ system and C# event notifiers were created by Stevens Miller
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000001.html">ComboGadget</a>
+	    <a href="topic_0000000000000008.html">ComboGadget</a>
 	  </td>
 	  <td>
 
@@ -168,7 +168,7 @@ A concrete Gadget that supports any number of &quot;rotors,&quot; which
 can have one of a specified number of states. For example, an
 on/off button could be based on a ComboGadget with one rotor
 that has two states. A four-digit bicycle lock could be based
-on a ComboGadget with four rotors that have ten states.
+on a ComboGadget with four rotors that have ten states each.
 
 A state is defined by an integer, but can be assigned any sort
 of appearance by a GadgetObserver. So, the on/off button's one
@@ -192,17 +192,27 @@ different shapes or pictures.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000005.html">ConditionList</a>
+	    <a href="topic_000000000000000C.html">ConditionList</a>
 	  </td>
 	  <td>
 
+<p>
 Maintains a list of Gadgets that all report when their status
 changes from completed to not completed, or vice versa. Also
 maintains a list of actions. The actions are invoked when the
-completion requirements of the list are met, which can be when
-all Gadgets report that they are completed, or when any one of
-them reports that it is completed, base on the setting of the
+completion requirements of the list change from not being met,
+to being met, or when they change from being met to not being met.
+Either change can occur when all Gadgets report that they are
+completed, or when any one of them reports that it is completed,
+(or when any one of them reports it is not completed, or when
+all of them report theyare completed), based on the setting of the
 allMustBeCompleted flag.
+</p>
+<p>
+When the actions are invoked, each is passed a boolean true or
+false. True means the conditions were met. False means they were
+not met.
+</p>
 
 		</td>
 	</tr>
@@ -217,7 +227,26 @@ allMustBeCompleted flag.
     
 	  </td>
 	  <td>
-	    <a href="topic_000000000000000B.html">Gadget</a>
+	    <a href="topic_0000000000000001.html">DollyTrack</a>
+	  </td>
+	  <td>
+
+
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000012.html">Gadget</a>
 	  </td>
 	  <td>
 
@@ -267,7 +296,7 @@ By contract, all Gadgets start in the not completed state.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000014.html">GadgetObserver</a>
+	    <a href="topic_000000000000001B.html">GadgetObserver</a>
 	  </td>
 	  <td>
 
@@ -298,7 +327,7 @@ UpdateListener method.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000018.html">Knob</a>
+	    <a href="topic_000000000000002A.html">Knob</a>
 	  </td>
 	  <td>
 
@@ -308,6 +337,11 @@ Knob has been clicked, passing its Knob number, so the Knobs object
 can use it in a call to its Gadget's Interact method, and so the
 Knobs object can update this Knob's transform (to make it appear to
 turn).
+<p>
+Note that this class is an ordinary subclass of MonoBehaviour, not
+a subclass of GadgetObserver. It will cooperate with a Knobs object,
+which <i>is</i> a subclass of GadgetObserver.
+</p>
 
 		</td>
 	</tr>
@@ -322,11 +356,11 @@ turn).
     
 	  </td>
 	  <td>
-	    <a href="topic_000000000000001A.html">Knobs</a>
+	    <a href="topic_000000000000002C.html">Knobs</a>
 	  </td>
 	  <td>
 
-An observer for a ComboGadget that simulates a set of rotation knobs.
+An observer for a ComboGadget that simulates a set of rotating knobs.
 Put this on a GameObject with a ComboGadget. Add as many child
 GameObjects as there are rotors in the ComboGadget, and add a Knob
 component to each child GameObject. Set each Knob's number to
@@ -345,7 +379,7 @@ correspond to its rotor.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000020.html">LockingComboGadget</a>
+	    <a href="topic_0000000000000032.html">LockingComboGadget</a>
 	  </td>
 	  <td>
 
@@ -356,7 +390,7 @@ Gadgets that must be completed, must be met to &quot;unlock&quot; this
 Gadget. Until it is unlocked, the Gadget does not respond to
 Interact calls by changing any of its rotors. When the list of
 conditions is met, the ConditionList can call this object's
-SetUnLocked method to unlock at, at which point it begins
+SetUnLocked method to unlock it, at which point it begins
 passing calls to its Interact method up to the parent class's
 Interact method.
 <p>
@@ -386,7 +420,7 @@ turning on a power supply.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000024.html">PushButton</a>
+	    <a href="topic_000000000000003D.html">PushButton</a>
 	  </td>
 	  <td>
 
@@ -406,7 +440,7 @@ as an on/off pushbutton.
     
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000029.html">Safe</a>
+	    <a href="topic_0000000000000042.html">Safe</a>
 	  </td>
 	  <td>
 
@@ -422,6 +456,76 @@ combination of the LockingComboGadget's two state variables.
     </td></tr><tr valign="top"><td>true</td><td>true</td><td>
         Safe opens with a squeaking noise.
     </td></tr></table>
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000049.html">SortingGadget</a>
+	  </td>
+	  <td>
+
+A Gadget that calls for a complete set of items to be provided,
+then swapped in pairs until they are in a required order. The
+assumption is that missing items will be supplied from inventory,
+though the actual &quot;location&quot; of those items isn't really relevant.
+What matters is that, at any given moment, a single item that is
+not yet included in the Gadget may or may not be selected in an
+inventory (or elsewhere). If it is, and no item is also selected
+in the Gadget, selecting an empty &quot;cup&quot; in the Gadget will move
+the item from inventory (or wherever it is) into the cup, so that
+it becomes part of the set in the Gadget. If an inventory item is
+selected, and a non-empty cup is selected, selecting an empty
+cup swaps the empty cup and the item in the Gadget. This means
+you cannot swap an item in the Gadget with one in inventory (so
+items in the Gadget cannot be put back into the inventory).
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000004.html">Tilt</a>
+	  </td>
+	  <td>
+
+
+
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public class" title="Public class" src="msdn2017/pubclass.png"></img>
+
+
+    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000006.html">Turn</a>
+	  </td>
+	  <td>
+
+
 
 		</td>
 	</tr>
@@ -512,7 +616,7 @@ combination of the LockingComboGadget's two state variables.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

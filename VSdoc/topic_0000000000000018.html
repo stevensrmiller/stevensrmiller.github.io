@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>Knob Class</title>
+	<title>Gadget.IsCompleted Property</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">Knob Class</h1>
+  	<h1 class="title">Gadget.IsCompleted Property</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,12 +77,15 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        Simple class to put on a child GameObject of a GameObject that has
-a Knobs GadgetObserver on it. Reports to the Knobs objects when a
-Knob has been clicked, passing its Knob number, so the Knobs object
-can use it in a call to its Gadget's Interact method, and so the
-Knobs object can update this Knob's transform (to make it appear to
-turn).
+        Indicates the Gadget is in its completed state.
+        For client code, this is a read-only property. Internally, when it is set,
+        it will always notify all GadgetObservers that have subscribed to the OnUpdate
+        event (and any other objects that have subscribed to it, as well). If the
+        completed state changes when it is set (that is, when a not completed Gadget
+        becomes completed, or a completed Gadget becomes not completed) it will notify
+        all ConditionLists that have subscribed to the OnConditionChanged event (and
+        any other objects that have subscribed to it, as well).
+<p>Note that all Gadgets, by contract, start in the not completed state.</p>
 
 
         <p /><strong>Namespace:</strong>
@@ -145,7 +148,7 @@ turn).
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Class Knob&nbsp;<br />    Inherits <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Property IsCompleted() As <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">Boolean</a>&nbsp;<br />    Get&nbsp;<br />    Protected Set(ByVal Value As  As <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">Boolean</a>)</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -184,7 +187,7 @@ turn).
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public class Knob : <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> IsCompleted {get; protected set;}</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -224,7 +227,7 @@ turn).
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public ref class Knob : public <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a>^</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br />property <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> IsCompleted {&nbsp;<br /> <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> get( );&nbsp;<br /> protected: void set(&nbsp;<br />   <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> value&nbsp;<br /> );&nbsp;<br />}</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -263,7 +266,7 @@ turn).
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public class Knob&nbsp;<br />   extends <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
+					<pre xml:space="preserve" class="brush: js">public function get IsCompleted() : <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">boolean</a>;&nbsp;<br />protected function set IsCompleted(value : <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">boolean</a>);</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -275,6 +278,11 @@ turn).
 
 
 
+	<h4 class="subHeading">
+		Property Value</h4>
+	Type: <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> 
+	
+
 
 
 
@@ -292,77 +300,6 @@ turn).
 </div>
 
 
-
-
-
-
-
-
-
-
-  
-
-<!-- Classes -->
-
-<!-- Classes End -->
-
-<!-- Standard Modules -->
-
-<!-- Standard Modules End -->
-
-  
-
-
-
-
-
-<div class="section_container">
-	<div class="section_heading">
-		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Fields</a></span>
-		<div><hr /></div>
-	</div>
-
-	<div id="FieldsSection" class="section">	
-  <table class="memberListTable">
-    <tr>
-      <th></th>
-      <th>
-        Name
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-
-	<tr class="
-	
-	
-	">
-	  <td>
-		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
-	
-	
-	    
-	  </td>
-	  <td>
-	    <a href="topic_0000000000000019.html">knobNumber</a>
-	  </td>
-	  <td>
-	
-	Set this to match the rotor number in the ComboGadget this Knob
-corresponds to.
-	
-		</td>
-	</tr>
-
-  </table>
-
-  <a href="#mainBody">
-    Top
-  </a>
-
-	</div>					
-</div>
 
 
 
@@ -424,7 +361,6 @@ corresponds to.
 	</div>					
 </div>
 
-
 <div class="section_container">
 	<div class="section_heading">
 		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">See Also</a></span>
@@ -433,10 +369,14 @@ corresponds to.
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-	<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
+			<a href="topic_0000000000000012.html">Gadget Class</a><br />
 
 
-	
+
+<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
+
+
+			
 
 		</div>
 	</div>					
@@ -444,7 +384,7 @@ corresponds to.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

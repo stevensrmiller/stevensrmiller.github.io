@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>OnConditionChanged Event</title>
+	<title>ConditionList Class</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">OnConditionChanged Event</h1>
+  	<h1 class="title">ConditionList Class</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,6 +77,23 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
+        <p>
+Maintains a list of Gadgets that all report when their status
+changes from completed to not completed, or vice versa. Also
+maintains a list of actions. The actions are invoked when the
+completion requirements of the list change from not being met,
+to being met, or when they change from being met to not being met.
+Either change can occur when all Gadgets report that they are
+completed, or when any one of them reports that it is completed,
+(or when any one of them reports it is not completed, or when
+all of them report theyare completed), based on the setting of the
+allMustBeCompleted flag.
+</p>
+<p>
+When the actions are invoked, each is passed a boolean true or
+false. True means the conditions were met. False means they were
+not met.
+</p>
 
 
         <p /><strong>Namespace:</strong>
@@ -139,7 +156,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Event OnConditionChanged As <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.action-1">Action</a>(Of <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">Boolean</a>)</pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Class ConditionList&nbsp;<br />    Inherits <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -178,7 +195,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public event <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.action-1">Action</a>&lt;<a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a>&gt; OnConditionChanged</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public class ConditionList : <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -218,7 +235,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br />event <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.action-1">Action</a>&lt;<a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a>^&gt;^ OnConditionChanged {&nbsp;<br />}</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public ref class ConditionList : public <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a>^</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -257,7 +274,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">JScript supports the use of events, but not the declaration of new ones.</pre>			
+					<pre xml:space="preserve" class="brush: js">public class ConditionList&nbsp;<br />   extends <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -282,11 +299,191 @@ function replaceTitleAndUrl(win, title, url) {
 
 
 
-
 	</div>
 </div>
 
 
+
+
+
+
+
+
+
+
+  
+
+<!-- Classes -->
+
+<!-- Classes End -->
+
+<!-- Standard Modules -->
+
+<!-- Standard Modules End -->
+
+  
+
+
+
+
+
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Fields</a></span>
+		<div><hr /></div>
+	</div>
+
+	<div id="FieldsSection" class="section">	
+  <table class="memberListTable">
+    <tr>
+      <th></th>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+
+	<tr class="
+	
+	
+	">
+	  <td>
+		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
+	
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000010.html">actionsOnConditionsCompleted</a>
+	  </td>
+	  <td>
+	
+	<p>Any public method that takes a single boolean arguent
+can be called from this action list, by
+adding it to the list in the Unity Inspector. Note that
+the state of the entire codition list is reported. That is, if
+the list requires that all Gadgets be completed (that is, when
+allMustBeCompleted is true), then when all Gadgets are
+completed, the actions are all called and are passed the
+boolean value true. In that case, if one Gadget later changes
+from being completed to no longer being completed, all of the
+actions are called again, this time being passed the boolean
+value false.
+</p>
+<p>
+Similarly, if allMustBeCompleted is false, then when all
+Gadgets are not completed, and then one becomes completed,
+all actions are called and are passed the boolean value true.
+Later, if all Gadgets change to being not completed, then all
+actions will be called with the boolean value false.
+</p>
+	
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
+	
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000000E.html">allMustBeCompleted</a>
+	  </td>
+	  <td>
+	
+	Typically, you will want all Gadgets on the list to be
+completed before the actions are invoked. Set this to true
+when that's what you want. Setting it to false will result
+in the actions being invoked whenever the Gadgets are all
+not completed, and one of them becomes completed. Note that
+a second Gadget becoming completed does NOT invoke the list
+of actions again. It is only when all Gadgets are not completed,
+and one of them reports that it is completed, that the actions
+are invoked, or when exactly one is completed and it changes to
+report that it is not completed.
+	
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
+	
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000000F.html">conditions</a>
+	  </td>
+	  <td>
+	
+	Drag and drop the Gadgets that must be completed onto this
+array in the Unity Inspector.
+	
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
+	
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_0000000000000011.html">numUncompleted</a>
+	  </td>
+	  <td>
+	
+	This value tracks how many uncompleted conditions there are.
+It is public to enable debugging. Don't change it.
+	
+		</td>
+	</tr>
+	<tr class="
+	
+	
+	">
+	  <td>
+		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
+	
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000000D.html">stayCompleted</a>
+	  </td>
+	  <td>
+	
+	If you want the list to stay completed once its completion
+criteria are met, set this to true. Note that this does NOT
+force any of the Gadgets in the list to remain completed.
+Instead, it prevents the actions on the action list from
+being called again to signal that the criteria have gone
+from being met to unmet, even if one or more of the Gadgets
+changes from being completed to no longer being completed.
+	
+		</td>
+	</tr>
+
+  </table>
+
+  <a href="#mainBody">
+    Top
+  </a>
+
+	</div>					
+</div>
 
 
 
@@ -348,6 +545,7 @@ function replaceTitleAndUrl(win, title, url) {
 	</div>					
 </div>
 
+
 <div class="section_container">
 	<div class="section_heading">
 		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">See Also</a></span>
@@ -356,14 +554,10 @@ function replaceTitleAndUrl(win, title, url) {
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-			<a href="topic_000000000000000B.html">Gadget Class</a><br />
+	<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
 
 
-
-<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
-
-
-			
+	
 
 		</div>
 	</div>					
@@ -371,7 +565,7 @@ function replaceTitleAndUrl(win, title, url) {
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">
@@ -383,3 +577,4 @@ function replaceTitleAndUrl(win, title, url) {
 		</script>	
   </body>
 </html>
+

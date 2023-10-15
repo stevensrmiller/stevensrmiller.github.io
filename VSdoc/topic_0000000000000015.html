@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>gadget Field</title>
+	<title>stayCompleted Field</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">gadget Field</h1>
+  	<h1 class="title">stayCompleted Field</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,6 +77,15 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
+        Set this true when you want the Gadget to &quot;latch.&quot; That is, once it
+is completed, it will stay completed, even if its internal state
+changes. Note that your subclassed Gadget can decide if it wants to
+allow its internal state to change once it has been completed. For
+example, a button when pressed could remain pressed, or you could
+allow the human player to pop the button back up again. If the button
+is a subclass of Gadget and stayCompleted is true, the button will
+remain in the completed condition permanenty after being pressed the
+first time.
 
 
         <p /><strong>Namespace:</strong>
@@ -139,7 +148,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Protected gadget As <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: vb">Public stayCompleted As <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">Boolean</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -178,7 +187,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">protected <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a> gadget</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> stayCompleted</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -218,7 +227,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">protected: &nbsp;<br /><a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a>^ gadget;</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br /><a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> stayCompleted;</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -257,7 +266,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">protected gadget : <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: js">public stayCompleted : <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">boolean</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -271,7 +280,7 @@ function replaceTitleAndUrl(win, title, url) {
 
 	<h4 class="subHeading">
 		Field Value</h4>
-	Type: <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a> 
+	Type: <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a> 
 	
 
 
@@ -360,7 +369,7 @@ function replaceTitleAndUrl(win, title, url) {
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-			<a href="topic_0000000000000014.html">GadgetObserver Class</a><br />
+			<a href="topic_0000000000000012.html">Gadget Class</a><br />
 
 
 
@@ -375,7 +384,7 @@ function replaceTitleAndUrl(win, title, url) {
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

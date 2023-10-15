@@ -7,10 +7,20 @@
 
    <Context>
       <Keywords>
+         <KItem Name="" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000052.html" LinkGroup="Assembly-CSharp"><default> Namespace</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
          <KItem Name="Assembly-CSharp Reference" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000030.html" LinkGroup="Assembly-CSharp">Assembly-CSharp Reference</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000051.html" LinkGroup="Assembly-CSharp">Assembly-CSharp Reference</LItem>
       </Links>
    </Context>
    
@@ -20,7 +30,7 @@
          <KItem Name="ExLumina.StampGadgets.ComboGadget" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000001.html" LinkGroup="Assembly-CSharp">ComboGadget Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000008.html" LinkGroup="Assembly-CSharp">ComboGadget Class</LItem>
       </Links>
    </Context>
    
@@ -30,7 +40,37 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000005.html" LinkGroup="Assembly-CSharp">ConditionList Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000C.html" LinkGroup="Assembly-CSharp">ConditionList Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem.DeSelect" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000028.html" LinkGroup="Assembly-CSharp">DeSelect Method {InventoryItem}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="NotAPiece.DeSelect" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000038.html" LinkGroup="Assembly-CSharp">DeSelect Method {NotAPiece}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Piece.DeSelect" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003C.html" LinkGroup="Assembly-CSharp">DeSelect Method {Piece}</LItem>
       </Links>
    </Context>
    
@@ -40,7 +80,17 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.DoUpdate" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000013.html" LinkGroup="Assembly-CSharp">DoUpdate Method</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001A.html" LinkGroup="Assembly-CSharp">DoUpdate Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.DollyTrack" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000001.html" LinkGroup="Assembly-CSharp">DollyTrack Class</LItem>
       </Links>
    </Context>
    
@@ -60,7 +110,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000B.html" LinkGroup="Assembly-CSharp">Gadget Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000012.html" LinkGroup="Assembly-CSharp">Gadget Class</LItem>
       </Links>
    </Context>
    
@@ -70,7 +120,7 @@
          <KItem Name="ExLumina.StampGadgets.GadgetObserver" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000014.html" LinkGroup="Assembly-CSharp">GadgetObserver Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001B.html" LinkGroup="Assembly-CSharp">GadgetObserver Class</LItem>
       </Links>
    </Context>
    
@@ -80,7 +130,7 @@
          <KItem Name="ExLumina.StampGadgets.ComboGadget.Interact" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000004.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.ComboGadget}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000B.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.ComboGadget}</LItem>
       </Links>
    </Context>
    
@@ -90,7 +140,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.Interact" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000012.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.Gadget}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000019.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.Gadget}</LItem>
       </Links>
    </Context>
    
@@ -100,7 +150,27 @@
          <KItem Name="ExLumina.StampGadgets.LockingComboGadget.Interact" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000022.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.LockingComboGadget}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000034.html" LinkGroup="Assembly-CSharp">Interact Method {ExLumina.StampGadgets.LockingComboGadget}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Inventory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001F.html" LinkGroup="Assembly-CSharp">Inventory Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000024.html" LinkGroup="Assembly-CSharp">InventoryItem Class</LItem>
       </Links>
    </Context>
    
@@ -110,7 +180,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.IsCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000011.html" LinkGroup="Assembly-CSharp">IsCompleted Property</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000018.html" LinkGroup="Assembly-CSharp">IsCompleted Property</LItem>
       </Links>
    </Context>
    
@@ -120,7 +190,7 @@
          <KItem Name="ExLumina.StampGadgets.Knob" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000018.html" LinkGroup="Assembly-CSharp">Knob Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002A.html" LinkGroup="Assembly-CSharp">Knob Class</LItem>
       </Links>
    </Context>
    
@@ -130,7 +200,17 @@
          <KItem Name="ExLumina.StampGadgets.Knobs" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001A.html" LinkGroup="Assembly-CSharp">Knobs Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002C.html" LinkGroup="Assembly-CSharp">Knobs Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Inventory.Load" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000021.html" LinkGroup="Assembly-CSharp">Load Method</LItem>
       </Links>
    </Context>
    
@@ -140,7 +220,17 @@
          <KItem Name="ExLumina.StampGadgets.LockingComboGadget" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000020.html" LinkGroup="Assembly-CSharp">LockingComboGadget Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000032.html" LinkGroup="Assembly-CSharp">LockingComboGadget Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="NotAPiece" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000036.html" LinkGroup="Assembly-CSharp">NotAPiece Class</LItem>
       </Links>
    </Context>
    
@@ -150,7 +240,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.OnConditionChanged" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000C.html" LinkGroup="Assembly-CSharp">OnConditionChanged Event</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000013.html" LinkGroup="Assembly-CSharp">OnConditionChanged Event</LItem>
       </Links>
    </Context>
    
@@ -160,7 +250,27 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.OnUpdate" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000D.html" LinkGroup="Assembly-CSharp">OnUpdate Event</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000014.html" LinkGroup="Assembly-CSharp">OnUpdate Event</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Piece" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000039.html" LinkGroup="Assembly-CSharp">Piece Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Piece.Piece" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003A.html" LinkGroup="Assembly-CSharp">Piece Constructor</LItem>
       </Links>
    </Context>
    
@@ -170,7 +280,27 @@
          <KItem Name="ExLumina.StampGadgets.PushButton" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000024.html" LinkGroup="Assembly-CSharp">PushButton Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003D.html" LinkGroup="Assembly-CSharp">PushButton Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Inventory.Remove" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000023.html" LinkGroup="Assembly-CSharp">Remove Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem.RemoveFromInventory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000029.html" LinkGroup="Assembly-CSharp">RemoveFromInventory Method</LItem>
       </Links>
    </Context>
    
@@ -180,7 +310,67 @@
          <KItem Name="ExLumina.StampGadgets.Safe" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000029.html" LinkGroup="Assembly-CSharp">Safe Class</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000042.html" LinkGroup="Assembly-CSharp">Safe Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem.Select" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000027.html" LinkGroup="Assembly-CSharp">Select Method {InventoryItem}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="NotAPiece.Select" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000037.html" LinkGroup="Assembly-CSharp">Select Method {NotAPiece}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Piece.Select" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003B.html" LinkGroup="Assembly-CSharp">Select Method {Piece}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.SelectCup" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004E.html" LinkGroup="Assembly-CSharp">SelectCup Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Inventory.SelectSlot" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000022.html" LinkGroup="Assembly-CSharp">SelectSlot Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.SelectedInventory" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004F.html" LinkGroup="Assembly-CSharp">SelectedInventory Method</LItem>
       </Links>
    </Context>
    
@@ -190,7 +380,47 @@
          <KItem Name="ExLumina.StampGadgets.LockingComboGadget.SetUnlocked" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000023.html" LinkGroup="Assembly-CSharp">SetUnlocked Method</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000035.html" LinkGroup="Assembly-CSharp">SetUnlocked Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.Show" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000050.html" LinkGroup="Assembly-CSharp">Show Method</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.Solved" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004D.html" LinkGroup="Assembly-CSharp">Solved Property</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000049.html" LinkGroup="Assembly-CSharp">SortingGadget Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.SortingGadget" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004C.html" LinkGroup="Assembly-CSharp">SortingGadget Constructor</LItem>
       </Links>
    </Context>
    
@@ -200,7 +430,7 @@
          <KItem Name="ExLumina.StampGadgets.GadgetObserver.Start" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000016.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001D.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
       </Links>
    </Context>
    
@@ -210,7 +440,7 @@
          <KItem Name="ExLumina.StampGadgets.Knobs.Start" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001D.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Knobs}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002F.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Knobs}</LItem>
       </Links>
    </Context>
    
@@ -220,7 +450,7 @@
          <KItem Name="ExLumina.StampGadgets.PushButton.Start" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000027.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.PushButton}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000040.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.PushButton}</LItem>
       </Links>
    </Context>
    
@@ -230,7 +460,27 @@
          <KItem Name="ExLumina.StampGadgets.Safe.Start" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002E.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Safe}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000047.html" LinkGroup="Assembly-CSharp">Start Method {ExLumina.StampGadgets.Safe}</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Tilt" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000004.html" LinkGroup="Assembly-CSharp">Tilt Class</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Turn" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000006.html" LinkGroup="Assembly-CSharp">Turn Class</LItem>
       </Links>
    </Context>
    
@@ -240,7 +490,7 @@
          <KItem Name="ExLumina.StampGadgets.Knobs.TurnKnob" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001E.html" LinkGroup="Assembly-CSharp">TurnKnob Method</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000030.html" LinkGroup="Assembly-CSharp">TurnKnob Method</LItem>
       </Links>
    </Context>
    
@@ -250,7 +500,7 @@
          <KItem Name="ExLumina.StampGadgets.LockingComboGadget.Unlocked" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000021.html" LinkGroup="Assembly-CSharp">Unlocked Property</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000033.html" LinkGroup="Assembly-CSharp">Unlocked Property</LItem>
       </Links>
    </Context>
    
@@ -260,7 +510,7 @@
          <KItem Name="ExLumina.StampGadgets.GadgetObserver.UpdateListener" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000017.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001E.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.GadgetObserver}</LItem>
       </Links>
    </Context>
    
@@ -270,7 +520,7 @@
          <KItem Name="ExLumina.StampGadgets.Knobs.UpdateListener" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001F.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Knobs}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000031.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Knobs}</LItem>
       </Links>
    </Context>
    
@@ -280,7 +530,7 @@
          <KItem Name="ExLumina.StampGadgets.PushButton.UpdateListener" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000028.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.PushButton}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000041.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.PushButton}</LItem>
       </Links>
    </Context>
    
@@ -290,7 +540,7 @@
          <KItem Name="ExLumina.StampGadgets.Safe.UpdateListener" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002F.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Safe}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000048.html" LinkGroup="Assembly-CSharp">UpdateListener Method {ExLumina.StampGadgets.Safe}</LItem>
       </Links>
    </Context>
    
@@ -300,7 +550,7 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList.actionsOnConditionsCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000009.html" LinkGroup="Assembly-CSharp">actionsOnConditionsCompleted Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000010.html" LinkGroup="Assembly-CSharp">actionsOnConditionsCompleted Field</LItem>
       </Links>
    </Context>
    
@@ -310,7 +560,7 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList.allMustBeCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000007.html" LinkGroup="Assembly-CSharp">allMustBeCompleted Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000E.html" LinkGroup="Assembly-CSharp">allMustBeCompleted Field</LItem>
       </Links>
    </Context>
    
@@ -320,7 +570,7 @@
          <KItem Name="ExLumina.StampGadgets.Safe.clank" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002C.html" LinkGroup="Assembly-CSharp">clank Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000045.html" LinkGroup="Assembly-CSharp">clank Field</LItem>
       </Links>
    </Context>
    
@@ -330,7 +580,7 @@
          <KItem Name="ExLumina.StampGadgets.Knobs.click" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001B.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.Knobs}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002D.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.Knobs}</LItem>
       </Links>
    </Context>
    
@@ -340,7 +590,7 @@
          <KItem Name="ExLumina.StampGadgets.PushButton.click" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000025.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.PushButton}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003E.html" LinkGroup="Assembly-CSharp">click Field {ExLumina.StampGadgets.PushButton}</LItem>
       </Links>
    </Context>
    
@@ -350,7 +600,7 @@
          <KItem Name="ExLumina.StampGadgets.Safe.close" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002B.html" LinkGroup="Assembly-CSharp">close Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000044.html" LinkGroup="Assembly-CSharp">close Field</LItem>
       </Links>
    </Context>
    
@@ -360,7 +610,27 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList.conditions" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000008.html" LinkGroup="Assembly-CSharp">conditions Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000F.html" LinkGroup="Assembly-CSharp">conditions Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.cups" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004A.html" LinkGroup="Assembly-CSharp">cups Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.DollyTrack.dollySpeed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000002.html" LinkGroup="Assembly-CSharp">dollySpeed Field</LItem>
       </Links>
    </Context>
    
@@ -370,7 +640,7 @@
          <KItem Name="ExLumina.StampGadgets.GadgetObserver.gadget" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000015.html" LinkGroup="Assembly-CSharp">gadget Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001C.html" LinkGroup="Assembly-CSharp">gadget Field</LItem>
       </Links>
    </Context>
    
@@ -380,7 +650,27 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.hasCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000F.html" LinkGroup="Assembly-CSharp">hasCompleted Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000016.html" LinkGroup="Assembly-CSharp">hasCompleted Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem.inv" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000026.html" LinkGroup="Assembly-CSharp">inv Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="InventoryItem.inventoryIcon" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000025.html" LinkGroup="Assembly-CSharp">inventoryIcon Field</LItem>
       </Links>
    </Context>
    
@@ -390,7 +680,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.isCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000010.html" LinkGroup="Assembly-CSharp">isCompleted Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000017.html" LinkGroup="Assembly-CSharp">isCompleted Field</LItem>
       </Links>
    </Context>
    
@@ -400,7 +690,17 @@
          <KItem Name="ExLumina.StampGadgets.Knob.knobNumber" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000019.html" LinkGroup="Assembly-CSharp">knobNumber Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002B.html" LinkGroup="Assembly-CSharp">knobNumber Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="Inventory.numSlots" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000020.html" LinkGroup="Assembly-CSharp">numSlots Field</LItem>
       </Links>
    </Context>
    
@@ -410,7 +710,7 @@
          <KItem Name="ExLumina.StampGadgets.ComboGadget.numStates" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000002.html" LinkGroup="Assembly-CSharp">numStates Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000009.html" LinkGroup="Assembly-CSharp">numStates Field</LItem>
       </Links>
    </Context>
    
@@ -420,7 +720,7 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList.numUncompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000A.html" LinkGroup="Assembly-CSharp">numUncompleted Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000011.html" LinkGroup="Assembly-CSharp">numUncompleted Field</LItem>
       </Links>
    </Context>
    
@@ -430,7 +730,7 @@
          <KItem Name="ExLumina.StampGadgets.Safe.open" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002A.html" LinkGroup="Assembly-CSharp">open Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000043.html" LinkGroup="Assembly-CSharp">open Field</LItem>
       </Links>
    </Context>
    
@@ -440,7 +740,17 @@
          <KItem Name="ExLumina.StampGadgets.ComboGadget.rotors" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000003.html" LinkGroup="Assembly-CSharp">rotors Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000A.html" LinkGroup="Assembly-CSharp">rotors Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.SortingGadget.solution" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000004B.html" LinkGroup="Assembly-CSharp">solution Field</LItem>
       </Links>
    </Context>
    
@@ -450,7 +760,7 @@
          <KItem Name="ExLumina.StampGadgets.Knobs.spung" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000001C.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.Knobs}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002E.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.Knobs}</LItem>
       </Links>
    </Context>
    
@@ -460,7 +770,7 @@
          <KItem Name="ExLumina.StampGadgets.PushButton.spung" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000026.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.PushButton}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000003F.html" LinkGroup="Assembly-CSharp">spung Field {ExLumina.StampGadgets.PushButton}</LItem>
       </Links>
    </Context>
    
@@ -470,7 +780,7 @@
          <KItem Name="ExLumina.StampGadgets.ConditionList.stayCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000006.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.ConditionList}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000D.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.ConditionList}</LItem>
       </Links>
    </Context>
    
@@ -480,7 +790,7 @@
          <KItem Name="ExLumina.StampGadgets.Gadget.stayCompleted" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000000E.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.Gadget}</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000015.html" LinkGroup="Assembly-CSharp">stayCompleted Field {ExLumina.StampGadgets.Gadget}</LItem>
       </Links>
    </Context>
    
@@ -490,7 +800,37 @@
          <KItem Name="ExLumina.StampGadgets.Safe.thunk" />
       </Keywords>
       <Links>
-         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_000000000000002D.html" LinkGroup="Assembly-CSharp">thunk Field</LItem>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000046.html" LinkGroup="Assembly-CSharp">thunk Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Tilt.tiltSpeed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000005.html" LinkGroup="Assembly-CSharp">tiltSpeed Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.DollyTrack.trackSpeed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000003.html" LinkGroup="Assembly-CSharp">trackSpeed Field</LItem>
+      </Links>
+   </Context>
+   
+
+   <Context>
+      <Keywords>
+         <KItem Name="ExLumina.StampGadgets.Turn.turnSpeed" />
+      </Keywords>
+      <Links>
+         <LItem URL="ms-its:Assembly-CSharp.chm::/topic_0000000000000007.html" LinkGroup="Assembly-CSharp">turnSpeed Field</LItem>
       </Links>
    </Context>
    

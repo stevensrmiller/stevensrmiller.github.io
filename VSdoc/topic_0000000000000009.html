@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>actionsOnConditionsCompleted Field</title>
+	<title>numStates Field</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">actionsOnConditionsCompleted Field</h1>
+  	<h1 class="title">numStates Field</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,22 +77,8 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        Any public method can be called from this action list, by
-adding it to the list in the Unity Inspector. Note that
-the state of the entire list is reported. That is, if the
-list requires that all Gadgets be completed (that is, when
-allMustBeCompleted is true), then when all Gadgets are
-completed, the actions are all called and are passed the
-boolean value true. In that case, if one Gadget later changes
-from being completed to no longer being completed, all of the
-actions are called again, this time being pass the boolean
-value false.
-
-Similarly, if allMustBeCompleted is false, then when all
-Gadgets are not completed, and then one becomes completed,
-all actions are called and are passed the boolean value true.
-Later, if all Gadgets change to being not completed, then all
-actions will be called with the boolean value false.
+        Sets how many different states each rotor can be in. All
+rotors have the same number of possible states.
 
 
         <p /><strong>Namespace:</strong>
@@ -155,7 +141,7 @@ actions will be called with the boolean value false.
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public actionsOnConditionsCompleted As <a target="_top" href=".html" onclick="this.target='';return true;">UnityEvent</a>(Of <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">Boolean</a>)</pre>			
+					<pre xml:space="preserve" class="brush: vb">Public numStates As <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">Integer</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -194,7 +180,7 @@ actions will be called with the boolean value false.
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href=".html" onclick="this.target='';return true;">UnityEvent</a>&lt;<a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a>&gt; actionsOnConditionsCompleted</pre>			
+					<pre xml:space="preserve" class="brush: csharp">public <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">int</a> numStates</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -234,7 +220,7 @@ actions will be called with the boolean value false.
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br /><a target="_top" href=".html" onclick="this.target='';return true;">UnityEvent</a>&lt;<a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a>^&gt;^ actionsOnConditionsCompleted;</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public: &nbsp;<br /><a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">int</a> numStates;</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -273,7 +259,7 @@ actions will be called with the boolean value false.
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">JScript does not support generic types and methods.</pre>			
+					<pre xml:space="preserve" class="brush: js">public numStates : <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">int</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -287,7 +273,7 @@ actions will be called with the boolean value false.
 
 	<h4 class="subHeading">
 		Field Value</h4>
-	Type: <a target="_top" href=".html" onclick="this.target='';return true;">UnityEvent</a>&lt;<a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.boolean">bool</a>&gt; 
+	Type: <a target="_top" href="https://docs.microsoft.com/en-us/dotnet/api/system.int32">int</a> 
 	
 
 
@@ -376,7 +362,7 @@ actions will be called with the boolean value false.
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-			<a href="topic_0000000000000005.html">ConditionList Class</a><br />
+			<a href="topic_0000000000000008.html">ComboGadget Class</a><br />
 
 
 
@@ -391,7 +377,7 @@ actions will be called with the boolean value false.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>MatrixLock Class</title>
+	<title>SortingGadget Class</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">MatrixLock Class</h1>
+  	<h1 class="title">SortingGadget Class</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,10 +77,24 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
+        A Gadget that calls for a complete set of items to be provided,
+then swapped in pairs until they are in a required order. The
+assumption is that missing items will be supplied from inventory,
+though the actual &quot;location&quot; of those items isn't really relevant.
+What matters is that, at any given moment, a single item that is
+not yet included in the Gadget may or may not be selected in an
+inventory (or elsewhere). If it is, and no item is also selected
+in the Gadget, selecting an empty &quot;cup&quot; in the Gadget will move
+the item from inventory (or wherever it is) into the cup, so that
+it becomes part of the set in the Gadget. If an inventory item is
+selected, and a non-empty cup is selected, selecting an empty
+cup swaps the empty cup and the item in the Gadget. This means
+you cannot swap an item in the Gadget with one in inventory (so
+items in the Gadget cannot be put back into the inventory).
 
 
         <p /><strong>Namespace:</strong>
-<a href="topic_0000000000000024.html">ExLumina.Gadgets</a>
+<a href="topic_0000000000000000.html">ExLumina.StampGadgets</a>
 
 
 
@@ -139,7 +153,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">&lt;CreateAssetMenu(fileName = &quot;MatrixLock&quot;, menuName = &quot;Gadgets/MatrixLock&quot;, order = 10)&gt; _&nbsp;<br />Public Class MatrixLock&nbsp;<br />    Inherits <a target="_top" href="topic_0000000000000028.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Class SortingGadget&nbsp;<br />    Inherits <a target="_top" href="topic_0000000000000012.html" onclick="this.target='';return true;">Gadget</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -178,7 +192,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">[CreateAssetMenu(fileName = &quot;MatrixLock&quot;, menuName = &quot;Gadgets/MatrixLock&quot;, order = 10)]&nbsp;<br />public class MatrixLock : <a target="_top" href="topic_0000000000000028.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: csharp">public class SortingGadget : <a target="_top" href="topic_0000000000000012.html" onclick="this.target='';return true;">Gadget</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -218,7 +232,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">[CreateAssetMenu(fileName = &quot;MatrixLock&quot;, menuName = &quot;Gadgets/MatrixLock&quot;, order = 10)]&nbsp;<br />public ref class MatrixLock : public <a target="_top" href="topic_0000000000000028.html" onclick="this.target='';return true;">Gadget</a>^</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public ref class SortingGadget : public <a target="_top" href="topic_0000000000000012.html" onclick="this.target='';return true;">Gadget</a>^</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -257,7 +271,7 @@ function replaceTitleAndUrl(win, title, url) {
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public &nbsp;<br />   CreateAssetMenu(fileName = &quot;MatrixLock&quot;, menuName = &quot;Gadgets/MatrixLock&quot;, order = 10)&nbsp;<br />class MatrixLock&nbsp;<br />   extends <a target="_top" href="topic_0000000000000028.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: js">public class SortingGadget&nbsp;<br />   extends <a target="_top" href="topic_0000000000000012.html" onclick="this.target='';return true;">Gadget</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -287,7 +301,109 @@ function replaceTitleAndUrl(win, title, url) {
 
 
 
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Constructors</a></span>
+		<div><hr /></div>
+	</div>
 
+	<div id="ConstructorsSection" class="section">	
+  <table class="memberListTable">
+    <tr>
+      <th></th>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+
+
+	
+			<tr class="
+	
+	
+	">
+	  <td>
+    <img alt="Public constructor" title="Public constructor" src="msdn2017/pubmethod.png"></img>
+
+	
+	    
+	  </td>
+	  <td>
+	    <a href="topic_000000000000004C.html">SortingGadget()</a>
+
+	  </td>
+	  <td>
+	
+	
+	
+		</td>
+	</tr>
+	
+
+
+  </table>
+
+  <a href="#mainBody">
+    Top
+  </a>
+
+	</div>					
+</div>
+
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Properties</a></span>
+		<div><hr /></div>
+	</div>
+
+	<div id="PropertiesSection" class="section">	
+  <table class="memberListTable">
+    <tr>
+      <th></th>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+
+
+	
+		<tr class="
+
+
+">
+	<td>
+<img alt="Public property" title="Public property" src="msdn2017/pubproperty.png"></img>
+
+
+    
+	</td>
+	<td>
+	<a href="topic_000000000000004D.html">Solved</a>
+
+	</td>
+	<td>
+
+
+
+	</td>
+</tr>
+	
+
+
+  </table>
+
+  <a href="#mainBody">
+    Top
+  </a>
+
+	</div>					
+</div>
 
 
 
@@ -320,16 +436,13 @@ function replaceTitleAndUrl(win, title, url) {
 
 ">
 	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
 
 
     
 	</td>
 	<td>
-	<a href="topic_000000000000004D.html">OnEnable()</a>
+	<a href="topic_000000000000004E.html">SelectCup(int)</a>
 
 	</td>
 	<td>
@@ -351,22 +464,18 @@ function replaceTitleAndUrl(win, title, url) {
 
 ">
 	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
 
 
     
 	</td>
 	<td>
-	<a href="topic_000000000000004E.html">SolvedLocked(int, int)</a>
+	<a href="topic_000000000000004F.html">SelectedInventory(Piece)</a>
 
 	</td>
 	<td>
 
-Override this in your subclass to provide the Gadget's action when it is in the
-solved and locked state.
+
 
 	</td>
 </tr>
@@ -383,86 +492,18 @@ solved and locked state.
 
 ">
 	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
 
 
     
 	</td>
 	<td>
-	<a href="topic_000000000000004F.html">SolvedUnlocked(int, int)</a>
+	<a href="topic_0000000000000050.html">Show()</a>
 
 	</td>
 	<td>
 
-Override this in your subclass to provide the Gadget's action when it is in the
-solved and unlocked state.
 
-	</td>
-</tr>
-
-
-
-
-
-
-
-
-	<tr class="
-
-
-">
-	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
-
-
-    
-	</td>
-	<td>
-	<a href="topic_0000000000000050.html">UnsolvedLocked(int, int)</a>
-
-	</td>
-	<td>
-
-Override this in your subclass to provide the Gadget's action when it is in the
-unsolved and locked state.
-
-	</td>
-</tr>
-
-
-
-
-
-
-
-
-	<tr class="
-
-
-">
-	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
-
-
-    
-	</td>
-	<td>
-	<a href="topic_0000000000000051.html">UnsolvedUnlocked(int, int)</a>
-
-	</td>
-	<td>
-
-Override this in your subclass to provide the Gadget's action when it is in the
-unsolved and unlocked state.
 
 	</td>
 </tr>
@@ -480,8 +521,6 @@ unsolved and unlocked state.
 
 	</div>					
 </div>
-
-
 
 
 
@@ -542,26 +581,7 @@ unsolved and unlocked state.
 	    
 	  </td>
 	  <td>
-	    <a href="topic_000000000000004C.html">initDials</a>
-	  </td>
-	  <td>
-	
-	
-	
-		</td>
-	</tr>
-	<tr class="
-	
-	
-	">
-	  <td>
-		    <img alt="Public field" title="Public field" src="msdn2017/pubfield.png"></img>
-	
-	
-	    
-	  </td>
-	  <td>
-	    <a href="topic_000000000000004A.html">numStates</a>
+	    <a href="topic_000000000000004A.html">cups</a>
 	  </td>
 	  <td>
 	
@@ -612,12 +632,12 @@ unsolved and unlocked state.
 
 <div id="inheritanceHierarchySection" class="section">
 
-<div style="padding-left:0em;"><a href="topic_0000000000000028.html">ExLumina.Gadgets.Gadget</a>
+<div style="padding-left:0em;"><a href="topic_0000000000000012.html">ExLumina.StampGadgets.Gadget</a>
 </div>
 
 
 
-<div style="padding-left:1em;">ExLumina.Gadgets.MatrixLock</div>
+<div style="padding-left:1em;">ExLumina.StampGadgets.SortingGadget</div>
 
 				
 </div>
@@ -685,7 +705,7 @@ unsolved and unlocked state.
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-	<a href="topic_0000000000000024.html">ExLumina.Gadgets Namespace</a><br />
+	<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
 
 
 	
@@ -696,7 +716,7 @@ unsolved and unlocked state.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>ComboGadget Class</title>
+	<title>DollyTrack Class</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">ComboGadget Class</h1>
+  	<h1 class="title">DollyTrack Class</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,20 +77,6 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        A concrete Gadget that supports any number of &quot;rotors,&quot; which
-can have one of a specified number of states. For example, an
-on/off button could be based on a ComboGadget with one rotor
-that has two states. A four-digit bicycle lock could be based
-on a ComboGadget with four rotors that have ten states.
-
-A state is defined by an integer, but can be assigned any sort
-of appearance by a GadgetObserver. So, the on/off button's one
-rotor has either state = 0 or state = 1. But on the screen, the
-state = 0 could be presented as the button in the up position,
-and state = 1 could be presented as the button in the down
-position. Likewise, a state could be the position of a knob, or
-it could be the angle of a lever, or it could be one of several
-different shapes or pictures.
 
 
         <p /><strong>Namespace:</strong>
@@ -153,7 +139,7 @@ different shapes or pictures.
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Class ComboGadget&nbsp;<br />    Inherits <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: vb">Public Class DollyTrack&nbsp;<br />    Inherits <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -192,7 +178,7 @@ different shapes or pictures.
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public class ComboGadget : <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: csharp">public class DollyTrack : <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -232,7 +218,7 @@ different shapes or pictures.
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public ref class ComboGadget : public <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a>^</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public ref class DollyTrack : public <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a>^</pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -271,7 +257,7 @@ different shapes or pictures.
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public class ComboGadget&nbsp;<br />   extends <a target="_top" href="topic_000000000000000B.html" onclick="this.target='';return true;">Gadget</a></pre>			
+					<pre xml:space="preserve" class="brush: js">public class DollyTrack&nbsp;<br />   extends <a target="_top" href=".html" onclick="this.target='';return true;">MonoBehaviour</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -298,75 +284,6 @@ different shapes or pictures.
 
 	</div>
 </div>
-
-
-
-
-
-
-
-
-
-
-<div class="section_container">
-	<div class="section_heading">
-		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Methods</a></span>
-		<div><hr /></div>
-	</div>
-
-	<div id="MethodsSection" class="section">	
-  <table class="memberListTable">
-    <tr>
-      <th></th>
-      <th>
-        Name
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-
-
-
-
-	<tr class="
-
-
-">
-	<td>
-<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
-
-
-    
-	</td>
-	<td>
-	<a href="topic_0000000000000004.html">Interact(int, int)</a>
-
-	</td>
-	<td>
-
-Tells the Gadget to change the state of a rotor by
-some amount.
-
-	</td>
-</tr>
-
-
-
-
-
-
-  </table>
-
-  <a href="#mainBody">
-    Top
-  </a>
-
-	</div>					
-</div>
-
-
-
 
 
 
@@ -422,12 +339,11 @@ some amount.
 	    
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000002.html">numStates</a>
+	    <a href="topic_0000000000000002.html">dollySpeed</a>
 	  </td>
 	  <td>
 	
-	Sets how many different states each rotor can be in. All
-rotors have the same number of possible states.
+	
 	
 		</td>
 	</tr>
@@ -442,14 +358,11 @@ rotors have the same number of possible states.
 	    
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000003.html">rotors</a>
+	    <a href="topic_0000000000000003.html">trackSpeed</a>
 	  </td>
 	  <td>
 	
-	Stores the current state of each rotor in the x member.
-the &quot;completed&quot; state is stored in the y member. Note
-that, if you want a rotor to never be in the completed
-state, you can just set y = -1.
+	
 	
 		</td>
 	</tr>
@@ -469,28 +382,6 @@ state, you can just set y = -1.
 
 
 
-<div class="section_container">
-	<div class="section_heading">
-		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Inheritance Hierarchy</a></span>
-		<div><hr /></div>
-	</div>
-
-<div id="inheritanceHierarchySection" class="section">
-
-<div style="padding-left:0em;"><a href="topic_000000000000000B.html">ExLumina.StampGadgets.Gadget</a>
-</div>
-
-
-
-<div style="padding-left:1em;">ExLumina.StampGadgets.ComboGadget</div>
-
-<div style="padding-left:2em;"><a href="topic_0000000000000020.html">ExLumina.StampGadgets.LockingComboGadget</a>
-</div>
-
-
-				
-</div>
-</div>
 
 
 
@@ -565,7 +456,7 @@ state, you can just set y = -1.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

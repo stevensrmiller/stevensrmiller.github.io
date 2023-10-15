@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>PushButton Class</title>
+	<title>InventoryItem Class</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,7 +62,7 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">PushButton Class</h1>
+  	<h1 class="title">InventoryItem Class</h1>
   	<div id="headerLinks">
 
 	<a href="#seeAlsoSection">See Also</a>
@@ -77,12 +77,10 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
        
        
-        A simple GadgetObserver to present a two-state, one-rotor ComboGadget
-as an on/off pushbutton.
 
 
         <p /><strong>Namespace:</strong>
-<a href="topic_0000000000000000.html">ExLumina.StampGadgets</a>
+<a href="topic_0000000000000052.html">&lt;default&gt;</a>
 
 
 
@@ -141,7 +139,7 @@ as an on/off pushbutton.
 				</div>
 				
 				<div class="codeSnippetCode codeVB">
-					<pre xml:space="preserve" class="brush: vb">Public Class PushButton&nbsp;<br />    Inherits <a target="_top" href="topic_0000000000000014.html" onclick="this.target='';return true;">GadgetObserver</a></pre>			
+					<pre xml:space="preserve" class="brush: vb">Public MustInherit Class InventoryItem&nbsp;<br />    Inherits <a target="_top" href=".html" onclick="this.target='';return true;">ScriptableObject</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -180,7 +178,7 @@ as an on/off pushbutton.
 				</div>
 				
 				<div class="codeSnippetCode codeCsharp">
-					<pre xml:space="preserve" class="brush: csharp">public class PushButton : <a target="_top" href="topic_0000000000000014.html" onclick="this.target='';return true;">GadgetObserver</a></pre>			
+					<pre xml:space="preserve" class="brush: csharp">public abstract class InventoryItem : <a target="_top" href=".html" onclick="this.target='';return true;">ScriptableObject</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -220,7 +218,7 @@ as an on/off pushbutton.
 				</div>
 				
 				<div class="codeSnippetCode codeCpp">
-					<pre xml:space="preserve" class="brush: cpp">public ref class PushButton : public <a target="_top" href="topic_0000000000000014.html" onclick="this.target='';return true;">GadgetObserver</a>^</pre>			
+					<pre xml:space="preserve" class="brush: cpp">public ref class InventoryItem abstract : public <a target="_top" href=".html" onclick="this.target='';return true;">ScriptableObject</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -259,7 +257,7 @@ as an on/off pushbutton.
 				</div>
 				
 				<div class="codeSnippetCode codeJScript">
-					<pre xml:space="preserve" class="brush: js">public class PushButton&nbsp;<br />   extends <a target="_top" href="topic_0000000000000014.html" onclick="this.target='';return true;">GadgetObserver</a></pre>			
+					<pre xml:space="preserve" class="brush: js">public abstract class InventoryItem&nbsp;<br />   extends <a target="_top" href=".html" onclick="this.target='';return true;">ScriptableObject</a></pre>			
 				</div>
 				<div class="codeSnippetCode codeNA">
 					<pre xml:space="preserve">This language is not supported or no code example is available.</pre>			
@@ -322,16 +320,13 @@ as an on/off pushbutton.
 
 ">
 	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
 
 
     
 	</td>
 	<td>
-	<a href="topic_0000000000000027.html">Start()</a>
+	<a href="topic_0000000000000028.html">DeSelect()</a>
 
 	</td>
 	<td>
@@ -353,28 +348,46 @@ as an on/off pushbutton.
 
 ">
 	<td>
-   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
-
-    
-	  
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
 
 
     
 	</td>
 	<td>
-	<a href="topic_0000000000000028.html">UpdateListener(bool, int, int)</a>
+	<a href="topic_0000000000000029.html">RemoveFromInventory()</a>
 
 	</td>
 	<td>
 
-Your subclass of GadgetObserver must implement this method to be
-notified whenever the Gadget you observe has its Interact method
-called. Note that the &quot;isLatched&quot; parameter is passed here as a
-reminder that, if a Gadget has its &quot;stayCompleted&quot; flag set true, and
-has ever been completed, you most likely don't want to update your
-observer in the normal way. More likely, you will want to present
-the human player with some indication that the this Gadget is no
-longer interactive.
+
+
+	</td>
+</tr>
+
+
+
+
+
+
+
+
+	<tr class="
+
+
+">
+	<td>
+<img alt="Public method" title="Public method" src="msdn2017/pubmethod.png"></img>
+
+
+    
+	</td>
+	<td>
+	<a href="topic_0000000000000027.html">Select()</a>
+
+	</td>
+	<td>
+
+
 
 	</td>
 </tr>
@@ -392,6 +405,7 @@ longer interactive.
 
 	</div>					
 </div>
+
 
 
 
@@ -451,11 +465,11 @@ longer interactive.
 	    
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000025.html">click</a>
+	    <a href="topic_0000000000000026.html">inv</a>
 	  </td>
 	  <td>
 	
-	Play this sound when the button moves.
+	
 	
 		</td>
 	</tr>
@@ -470,11 +484,11 @@ longer interactive.
 	    
 	  </td>
 	  <td>
-	    <a href="topic_0000000000000026.html">spung</a>
+	    <a href="topic_0000000000000025.html">inventoryIcon</a>
 	  </td>
 	  <td>
 	
-	Play this sound instead of moving the button when the button is latched.
+	
 	
 		</td>
 	</tr>
@@ -494,24 +508,6 @@ longer interactive.
 
 
 
-<div class="section_container">
-	<div class="section_heading">
-		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Inheritance Hierarchy</a></span>
-		<div><hr /></div>
-	</div>
-
-<div id="inheritanceHierarchySection" class="section">
-
-<div style="padding-left:0em;"><a href="topic_0000000000000014.html">ExLumina.StampGadgets.GadgetObserver</a>
-</div>
-
-
-
-<div style="padding-left:1em;">ExLumina.StampGadgets.PushButton</div>
-
-				
-</div>
-</div>
 
 
 
@@ -575,7 +571,7 @@ longer interactive.
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-	<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
+	<a href="topic_0000000000000052.html">&lt;default&gt; Namespace</a><br />
 
 
 	
@@ -586,7 +582,7 @@ longer interactive.
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">

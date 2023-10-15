@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="GENERATOR" content="VSdocman - documentation generator; http://www.helixoft.com" />
-	<title>Lock1x2 Methods</title>
+	<title>Safe Methods</title>
 
 	<link rel="stylesheet" type="text/css" href="msdn2017/msdn2017.css"></link>
 	<script src="msdn2017/msdn2017.js" type="text/javascript"></script>
@@ -62,9 +62,9 @@ function replaceTitleAndUrl(win, title, url) {
 <!--HEADER START-->
   <div id="header">
   	<div id="runningHeaderText">Assembly-CSharp Reference</div>
-  	<h1 class="title">Lock1x2 Methods</h1>
+  	<h1 class="title">Safe Methods</h1>
   	<div id="headerLinks">
-              <a href="topic_0000000000000042.html">Lock1x2 Class</a>
+              <a href="topic_0000000000000042.html">Safe Class</a>
             &nbsp;<a href="#seeAlsoSection">See Also</a>
 		</div>
 		<hr />
@@ -76,9 +76,120 @@ function replaceTitleAndUrl(win, title, url) {
         <p />
         <p>
           The following tables list the members exposed by the  
-              <a href="topic_0000000000000042.html">Lock1x2</a>
+              <a href="topic_0000000000000042.html">Safe</a>
              type.
         </p>
+
+
+
+
+
+<div class="section_container">
+	<div class="section_heading">
+		<span><a href="javascript:void(0)" title="Collapse" onclick="toggleSection(this);">Methods</a></span>
+		<div><hr /></div>
+	</div>
+
+	<div id="MethodsSection" class="section">	
+  <table class="memberListTable">
+    <tr>
+      <th></th>
+      <th>
+        Name
+      </th>
+      <th>
+        Description
+      </th>
+    </tr>
+
+
+
+
+	<tr class="
+
+
+">
+	<td>
+   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
+
+    
+	  
+
+
+    
+	</td>
+	<td>
+	<a href="topic_0000000000000047.html">Start()</a>
+
+	</td>
+	<td>
+
+Unity's Start method. This override finds the Safe's &quot;Hinge&quot; so it
+can be moved, and also calls the GadgetObserver's Start method.
+
+	</td>
+</tr>
+
+
+
+
+
+
+
+
+	<tr class="
+
+
+">
+	<td>
+   <img alt="Protected method" title="Protected method" src="msdn2017/protmethod.png"></img>
+
+    
+	  
+
+
+    
+	</td>
+	<td>
+	<a href="topic_0000000000000048.html">UpdateListener(bool, int, int)</a>
+
+	</td>
+	<td>
+
+Your subclass of GadgetObserver must implement this method to be
+notified whenever the Gadget you observe has its Interact method
+called. Note that the &quot;isLatched&quot; parameter is passed here as a
+reminder that, if a Gadget has its &quot;stayCompleted&quot; flag set true, and
+has ever been completed, you most likely don't want to update your
+observer in the normal way. More likely, you will want to present
+the human player with some indication that the this Gadget is no
+longer interactive.
+
+	</td>
+</tr>
+
+
+
+
+
+
+  </table>
+
+  <a href="#mainBody">
+    Top
+  </a>
+
+	</div>					
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -92,8 +203,8 @@ function replaceTitleAndUrl(win, title, url) {
 
 	<div id="seeAlsoSection" class="section">	
 		<div>
-			<a href="topic_0000000000000042.html">Lock1x2 Class</a><br />
-	<a href="topic_0000000000000024.html">ExLumina.Gadgets Namespace</a><br />
+			<a href="topic_0000000000000042.html">Safe Class</a><br />
+	<a href="topic_0000000000000000.html">ExLumina.StampGadgets Namespace</a><br />
 
 
 			
@@ -104,7 +215,7 @@ function replaceTitleAndUrl(win, title, url) {
 			</div>
 			</div>
       <div id="footer">
-      	<p><span style="color: #FF0000;">Generated with unregistered version of <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></span>&nbsp;<br />Your own footer text will only be shown in registered version.</p>
+      	<p>Generated with <a target="_top" href="http://www.helixoft.com/vsdocman/overview.html">VSdocman</a></p>
       </div>
     </div>
   	<script type="text/javascript">
