@@ -7,14 +7,14 @@ Right away, you can see that 1, 2, 6, 7, and 9 are eliminated because they are c
 <img src=002.png></p>
 Is there anything you can do to further reduce the possibilities?</p>
 Yes!</p>
-If you look at the nonet to the left of that square (the nonet in the center of the entire puzzle), you can see that the blue square adds a kind of "tab" to that nonet. If all the other cages in that nonet filled it without crossing into any adjacent nonets, you could add them all up, subtract 45 (which is always the sum of a nonet's digits), and the remainder would be the digit in the tab.</p>
+If you look at the nonet to the left of the blue square (the nonet in the center of the entire puzzle), you can see that the blue square adds a kind of "tab" to the center nonet. If all the other cages in that nonet filled it without crossing into any adjacent nonets, you could add them all up, subtract 45 (which is always the sum of a nonet's digits), and the remainder would be the digit in the tab.</p>
 But you can't use that trick here, because one of the other cages does cross into an adjacent nonet, the cage with a value of 15:</p>
 <img src=003.png></p>
 However, only one square in that cage is inside the center nonet. Let's call that one the "notch."</p>
-Now, suppose the digit in tab were T, and the digit in the notch were N. The sum of all the digits in a nonet is always the same, 45. But we will generalize that to any shape where we always know the sum of the digits, by calling that number K. (A column always sums to K=45, and so does a row. But two adjacent nonets sum to K=90, three adjacent rows sum to K=135, and so on.)</p>
+Now, suppose the digit in the tab were T, and the digit in the notch were N. The sum of all the digits in a nonet is always the same, 45. But we will generalize that to any shape where we always know the sum of the digits, by calling that number K. (A column always sums to K=45, and so does a row. But two adjacent nonets sum to K=90, three adjacent rows sum to K=135, and so on.)</p>
 Let's call the sum of all the squares in the nonet <i>other</i> than the notch A. Then we know that this is true:</p>
 [1] A + N = K</p>
-We can add up the sums of all the cages that are entirely in the nonet, and the cage with the tab. Calling that sum S, we know that this is true:</p>
+We can add up the sums of all the cages that are entirely in the nonet, plus the cage with the tab. Calling that sum S, we know that this is true:</p>
 [2] A + T = S</p>
 Here are the squares that define, A, N, and T:</p>
 <img src=004.png></p>
@@ -35,7 +35,7 @@ We already know the digits that can be in the tab, so we use this to find the di
 N = T + 1</p>
 So, if T must be one of {3, 4, 5, 8}, N must be one of {4, 5, 6, 9}:</p>
 <img src=005.png></p>
-Now, let's take into account the value of the cage containing the notch, which is 15. Suppose the notch were a 4. The remaining digits in the cage would have to add up to 11. We can use (2, 9) or (9, 2), as those digits are already in use in that column. We can't use (4, 7) or (7, 4), because we are using 4 in that cage already if the notch were a 4. We can't use (5, 6) or (6, 5), as 6 is already in use in the column. What about (3, 8) or (8, 3)? Neither of those digits is in use in the same column, either of the two rows containing the two squares we are considering, nor the nonet containing those squares. Should we put (3, 8) and (8, 3) there? No! Because, if the notch has a 4 in it, and N = T + 1, then T = N - 1, and the tab would have a 3 in it, thus excluding (3, 8) and (8, 3). So, the notch cannot contain a 4, and we take it out:</p>
+Now, let's take into account the value of the cage containing the notch, which is 15. Suppose the notch were a 4. The remaining digits in the cage would have to add up to 11. We can't use (2, 9) or (9, 2), as those digits are already in use in that column. We can't use (4, 7) or (7, 4), because we are using 4 in that cage already if the notch were a 4. We can't use (5, 6) or (6, 5), as 6 is already in use in the column. What about (3, 8) or (8, 3)? Neither of those digits is in use in the same column, either of the two rows containing the two squares we are considering, nor the nonet containing those squares. Should we put (3, 8) and (8, 3) there? No! Because, if the notch has a 4 in it, and N = T + 1, then T = N - 1, and the tab would have a 3 in it, thus excluding (3, 8) and (8, 3). So, the notch cannot contain a 4, and we take it out:</p>
 <img src=006.png></p>
 But, because the notch and the tab have a fixed relationship, if 4 cannot be in the notch, then T = N - 1 tells us that 3 cannot be in the tab, so we can take that out too:</p>
 <img src=007.png></p>
