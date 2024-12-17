@@ -1,81 +1,83 @@
-<head></head>
+
+<!-- saved from url=(0051)https://stevensrmiller.github.io/RepeatPattern.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
 <body>
-<h3>Seamless Repetition</h3>
+<h3>Seamless Repetition of a Pattern</h3>
 <p>Suppose we have a cool pattern we'd like to use repeatedly, to cover a wall or the sides of an object. Maybe this one:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510177/preview" alt="Pat01.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510177" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat01.png" alt="Pat01.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510177" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>If we simply duplicate it and put the duplicate beside the original, there is an obvious seam in the middle where the original and the duplicate touch each other:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510213/preview" alt="Pat02.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510213" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat02.png" alt="Pat02.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510213" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Notice, however, that because each half of the picture above is the same, this means that the middle of each half is exactly the same as the middle of the other half. We can use this fact to make a new picture out of the center part of the one above. This new one will be the same size as the original pattern we started with, but its left edge will be a match for its right edge. Here's the part we'll use:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510293/preview" alt="Pat03.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510293" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat03.png" alt="Pat03.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510293" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Once we've cut that part out, it looks like this:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510311/preview" alt="Pat04.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510311" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat04.png" alt="Pat04.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510311" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>If we duplicate it and put the duplicate copy beside the original, the seam in the middle is gone, because the left edge of the duplicate is a match for the right edge of the original:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510332/preview" alt="Pat05.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510332" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat05.png" alt="Pat05.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510332" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>But that's not much better since there are now&nbsp;<em>two</em> seams, even though there isn't a seam where the original and copy join together.</p>
 <p>To solve this problem, we will "fade" out the central region of that image we just cut out of the middle of the original and its duplicate. We will do this by using a "layer mask," which sets an amount of transparency for each point in the image. It's like the image is painted onto a sheet of glass. At the edges, the paint (that is, the image) will be completely opaque. As we move from the edges towards the center, we'll make the paint (again, that's the image) more and more transparent until, in the exact center, we'll just have clear glass:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510396/preview" alt="Pat06.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510396" data-api-returntype="File" />&nbsp;</p>
+<p><img src="./RepeatPattern_files/Pat06.png" alt="Pat06.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510396" data-api-returntype="File">&nbsp;</p>
 <p>&nbsp;</p>
 <p>The seam in the middle isn't visible anymore, because the picture is completely transparent there. In the image above, it's as though you are looking through the transparent center at the white background behind it. Because the left and right edge of the picture still match, we could, again, duplicate it and put the duplicate copy beside the one above:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510472/preview" alt="Pat07.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510472" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat07.png" alt="Pat07.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510472" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Now there is again no seam in the middle, and the seams that were in the middles of each half are invisible because they are transparent. But this isn't much better, since those transparent sections&nbsp; just look like big white, hazy vertical strips. To solve this problem, we will go back to our previous image with the transparent center:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510490/preview" alt="Pat06-1.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510490" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat06-1.png" alt="Pat06-1.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510490" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>But now, instead of looking through the transparent center at the white background, we will put a copy of the very first picture we used behand the one above, so we will see the center of&nbsp;<em>that</em> when we look through the transparent center of the image above. Here's the result:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510524/preview" alt="Pat08.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510524" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat08.png" alt="Pat08.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510524" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>One way to understand what you are seeing above is to think of the original picture having its own layer mask, but one that is doing the reverse of the layer mask we used to make the middle transparent. For our original, we are doing the equivalent of using a layer mask that makes it opaque in the middle and transparent at the edges:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510559/preview" alt="Pat09.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510559" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat09.png" alt="Pat09.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510559" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>The end result is that the combined picture isn't transparent anywhere. At the edges, you are seeing only the copy with the seam in the middle, and none of the original. At the center, you are seeing only the original and none of the copy. Everywhere else, you are seeing a blend of the copy and of the original. If we take that combined picture and duplicate it, then put the duplicate copy beside the original combined picture, there is no seam anywhere:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510601/preview" alt="Pat10.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510601" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat10.png" alt="Pat10.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510601" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>We can do this as many times as we like, copying and repeating our combined image, and there is never a visible seam:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510629/preview" alt="Pat11.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510629" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat11.png" alt="Pat11.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510629" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>The image&nbsp;<em>is</em> repeating, but there are no seams anywhere.</p>
 <p>&nbsp;</p>
 <h4>Repetition in Two Dimensions</h4>
 <p>The example above is strictly for repetition in one dimension. This is useful for backgrounds.</p>
 <p>We can use a very similar technique to create a pattern we can repeat in&nbsp;<em>two</em> dimensions. This is useful for sky cover, and any sort of surface texture where you can't have a seam in any direction. For example, if we use our pattern again:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510668/preview" alt="Pat01-1.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510668" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat01-1.png" alt="Pat01-1.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510668" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>And apply the same techniques as above, but this time we do it both horizontally&nbsp;<em>and</em> vertically, we get this result:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510679/preview" alt="Pat12.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510679" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat12.png" alt="Pat12.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510679" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Here's the above image, used nine times in a three-by-three layout:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510694/preview" alt="Pat13.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510694" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat13.png" alt="Pat13.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510694" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Again, the repetition is visible, but there are no seams. By comparison, here's what the result would be if we simply used nine copies of the original image:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510712/preview" alt="Pat14.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510712" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat14.png" alt="Pat14.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510712" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>This technique works best for images that have no obvious visual boundaries. For example, clouds:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510756/preview" alt="Pat15.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510756" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat15.png" alt="Pat15.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510756" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>With the seams:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510766/preview" alt="Pat16.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510766" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat16.png" alt="Pat16.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510766" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Without the seams:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510776/preview" alt="Pat17.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510776" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat17.png" alt="Pat17.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510776" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Stars are often a good choice too:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510811/preview" alt="Pat18.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510811" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat18.png" alt="Pat18.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510811" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>With the seams:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510830/preview" alt="Pat19.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510830" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat19.png" alt="Pat19.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510830" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Without the seams:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510842/preview" alt="Pat20.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510842" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat20.png" alt="Pat20.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510842" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Which images work best is a matter of taste. Some don't really succeed with this method:</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510882/preview" alt="Pat21.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510882" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat21.png" alt="Pat21.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510882" data-api-returntype="File"></p>
 <p>&nbsp;</p>
 <p>Others can work out pretty well;</p>
-<p><img src="https://umd.instructure.com/courses/1361169/files/77510910/preview" alt="Pat22.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510910" data-api-returntype="File" /></p>
+<p><img src="./RepeatPattern_files/Pat22.png" alt="Pat22.png" data-api-endpoint="https://umd.instructure.com/api/v1/courses/1361169/files/77510910" data-api-returntype="File"></p>
 <p>&nbsp;</p>
-<p>So, while it doesn't solve all problems, using transparency and duplicated images can permit you to use a single image over and over, to create a seamless picture of unlimited size.</p></body>
+<p>So, while it doesn't solve all problems, using transparency and duplicated images can permit you to use a single image over and over, to create a seamless picture of unlimited size.</p></body></html>
