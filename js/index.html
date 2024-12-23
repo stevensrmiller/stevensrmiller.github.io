@@ -2,14 +2,22 @@
 <html>
 <body>
 
-<h2>My First Web Page</h2>
-<p>My first paragraph.</p>
+<h2>Compute an Assignment</h2>
+<p>Destiny awaits you...</p>
 
-<p>Never call document.write after the document has finished loading.
-It will overwrite the whole document.</p>
+<p>
+<input id="UID" type="Text" size=50>
+</p>
+<p id="output">Output goes here.</p>
+
+<button onclick="compute()">Get Assignment</button>
 
 <script>
-document.write("Hello World!");
+function compute()
+{
+    var uid = document.getElementById("UID").value;
+	document.getElementById("output").innerHTML = uid * 2;
+}
 </script>
 
 </body>
