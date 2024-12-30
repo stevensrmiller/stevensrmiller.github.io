@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            This script tag operates a bit like a C/C++ #include
+            statement. The code in file runs NOW, when the tag
+            is processed. If all it does is define functions, the
+            function definitions persist while the page is loaded.
+            This means the onclick eventhandler for the button can
+            run one of those functions.
+        -->
+
+        <script src="HelloWorld.js"></script>
+    </head>
+<body>
+    <button onclick="sayHello()">Speak</button>
+
+    <p id="output">[my words will appear here]</p>
+</body>
+</html> 

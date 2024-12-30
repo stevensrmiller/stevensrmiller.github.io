@@ -1,0 +1,47 @@
+<!--
+    Copy the contents of a text input element into a paragraph.
+    Note that the JavaScript is all inlined in his HTML file.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+
+            // Get and return the string in the text box.
+            
+            function reader()
+            {
+                return document.getElementById("textBox").value;
+            }
+
+            // Copy what the reader function returns into
+            // the paragraph. Note that this could be done
+            // in one line here, without a reader function.
+
+            function btnRead()
+            {
+                document.getElementById("outputArea").innerHTML = reader();
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            <input type="text" id="textBox" value="00378435">
+        </p>
+        <!--
+            Create a button. "onclick" here is actually its
+            click event listener. The one line of code that
+            calls btnRead is actually the event handler. So
+            the copy could be done directely with
+
+            document.getElementById("outputArea").innerHTML = document.getElementById("textBox").value
+
+            Note that the button neither has, nor needs, an
+            id of its own.
+        -->
+        <button onclick='btnRead()'>Copy</button>
+
+        <p id="outputArea">[output will be here]</p>
+    </body>
+</html> 

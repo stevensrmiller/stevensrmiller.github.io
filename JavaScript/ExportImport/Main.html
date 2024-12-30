@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            We will load and run this module now. Note that
+            it is the only script tag in this HTML file.
+            That's because nothing the module defines can be
+            accessed outside the module, so it will have to
+            import everything it needs, and set up any event
+            handlers it relies on, by itself.
+        -->
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <!--
+            Remember that the module has already installed
+            an event handler for the click event of the
+            element with id "btn"
+        -->
+        <button id="btn">Say</button>
+        <!--
+            Our JavaScript module was written on the
+            presumption that an element suitable for
+            writing HTML into would have the id "output."
+        -->
+        <p id="output">[output will appear here]</p>
+    </body>
+</html> 
