@@ -16,7 +16,7 @@ That's not a lot of values, but for mixing up a homework assignment or flipping 
 
 This is also a fairly simple example of JavaScript "class" keyword, used to define objects.
 
-[Online example](Main.html).
+[Online example](https://stevensrmiller.github.io/JavaScript/Rando/Main.html).
 
 **NOTE:** If you are seeing this page alone with **Stevens R. Miller** at the top,
 you are at the actual web site, not the Github repo. 
