@@ -6,9 +6,9 @@ Simple stand-alone web pages and some associated short JavaScript programs to de
 
 Here you will find small programs written entirely in HTML and JavaScript. In the style of 20th century educational code, the programs are commented with the intent that, by reading the code, you will be able to learn what you need to use the same techniques in your own code. The directory names will typically tell you what each sample demonstrates.
 
-[ExportImport](./ExportImport)
-[HelloWorld](./HelloWorld)
-[Rando](./Rando)
+[ExportImport](./ExportImport)\
+[HelloWorld](./HelloWorld)\
+[Rando](./Rando)\
 [ReadInput](./ReadInput)
 
 ## We need more JavaScript tutorials?
