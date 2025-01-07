@@ -18,7 +18,7 @@ is in the JavaScript files, with only one script tag in your HTML page.
 
 But we'll see...
 
-[Online example](Main.html).
+[Online example](https://stevensrmiller.github.io/JavaScript/ExportImport/Main.html).
 
 **NOTE:** If you are seeing this page alone with **Stevens R. Miller** at the top,
 you are at the actual web site, not the Github repo. 
