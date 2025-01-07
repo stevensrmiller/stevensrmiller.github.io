@@ -15,3 +15,10 @@ rand implementation for C. It does a fair job of distributing 32768 values evenl
 That's not a lot of values, but for mixing up a homework assignment or flipping few coins, it will do.
 
 This is also a fairly simple example of JavaScript "class" keyword, used to define objects.
+
+[Online example](Main.html).
+
+**NOTE:** If you are seeing this page alone with **Stevens R. Miller** at the top,
+you are at the actual web site, not the Github repo. 
+[Visit the repo](https://github.com/stevensrmiller/stevensrmiller.github.io/tree/main/JavaScript)
+to see the source files.
