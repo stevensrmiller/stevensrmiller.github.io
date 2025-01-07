@@ -12,7 +12,7 @@ integer range, since the leftmost "1" is assumed after normalization).
 
 The only half-way good generator I could find that was sure to work within 53 bits was Microsoft's
 rand implementation for C. It does a fair job of distributing 32768 values evenly, with a long period.
-That's not a lot of values, but for mixing up a homework assignment or flipping few coins, it will do.
+That's not a lot of values, but for mixing up a homework assignment or flipping a few coins, it will do.
 
 This is also a fairly simple example of JavaScript "class" keyword, used to define objects.
 

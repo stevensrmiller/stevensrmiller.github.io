@@ -14,3 +14,8 @@ I find that some things are easy to learn from a tutorial or reference guide, wh
 
 For examples using modules (which is, or will be, most of them), you need to load your pages from a server, not as files. If you use VS Code, just add the "Live Server" extenstion
 by Ritwick Dey. Right-click on the HTML file you want to load in VS Code's Explorer, and pick "Open with Live Server."
+
+**NOTE:** If you are seeing this page alone with **Stevens R. Miller** at the top,
+you are at the actual web site, not the Github repo. 
+[Visit the repo](https://github.com/stevensrmiller/stevensrmiller.github.io/tree/main/JavaScript)
+to see the source files.

@@ -6,3 +6,10 @@ and copy it to an output section. Of course, you could process it first.
 
 All of the JavaScript for this one is in the HTML file, to keep it easy
 to find, as this one doesn't exemplify any reuseable features or code.
+
+[Online example](Main.html).
+
+**NOTE:** If you are seeing this page alone with **Stevens R. Miller** at the top,
+you are at the actual web site, not the Github repo. 
+[Visit the repo](https://github.com/stevensrmiller/stevensrmiller.github.io/tree/main/JavaScript)
+to see the source files.
