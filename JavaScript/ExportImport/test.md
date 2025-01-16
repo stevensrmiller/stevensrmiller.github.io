@@ -7,7 +7,8 @@ Some text on another line.
 
 ## Header 2
 
-Yes, text.
+Yes, text. And HTML.
+<p>Does this show up?</p>
 
 ### Header 3
 
