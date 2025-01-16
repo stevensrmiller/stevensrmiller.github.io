@@ -1,0 +1,260 @@
+<html>
+  <head>
+    <title>
+      Rotations
+    </title>
+  </head>
+  <body>
+    <p>Enter your 9-digit UID in the box, and press "Generate"</p>
+    <input type="text" id="textBox" value="000000001">
+    <button type="button" onclick="generate()">Generate</button>
+
+    <p id="output">Output will appear here.</p>
+    <script>
+      axes = ['Q', 'X', 'Y', 'Z']
+      var s;
+
+      function generate()
+      {
+        uid = document.getElementById("textBox").value;
+
+        nuid = Number(uid);
+
+        p = document.getElementById("output");
+
+        if (isNaN(nuid) || nuid === 0 || uid.length != 9)
+        {
+          s = "Be sure you enter nine digits and no other characters<br>";
+          s += `You entered this: "${uid}"`
+        }
+        else
+        {
+          const r = new Rando(nuid);
+          
+          s = "<pre>Questions 3 & 4:<br><br>";
+          s += "Use the same airplane in the same initial configuration, and in the same set of axes,<br>";
+          s += "for the first part of this assignment. Using a right-handed rotation rule, apply these<br>";
+          s += "rotations in the order given:<br><br>";
+          createRotations(1, 1, 1, r);
+          s += "<br>   3) Along which axis and in what direction is the nose pointed?<br>"
+          s += "   4) Along which axis and in what direction is the left wing pointed?<br><br>"
+
+          s += "-------------------------------------------------------------------------------------------------<br><br>"
+          s += "Questions 5 & 6:<br><br>"
+          s += "Use the same airplane in the same initial configuration, and in the same set of axes,<br>";
+          s += "for the first part of this assignment. Using a left-handed rotation rule, apply these<br>";
+          s += "rotations in the order given:<br><br>";
+          createRotations(4, 1, 2, r);
+          s += "<br>   5) Along which axis and in what direction is the nose pointed?<br>"
+          s += "   6) Along which axis and in what direction is the left wing pointed?<br><br>"
+
+          s += "-------------------------------------------------------------------------------------------------<br><br>"
+
+          s += "Questions 7 & 8:<br><br>"
+          s += "Use the same airplane in the same initial configuration, in the same set of axes,<br>";
+          s += "and with the same nose and wingtip coodinates as specified in Question 2<br>"
+          s += "for the first part of this assignment. Using a right-handed rotation rule, apply these<br>";
+          s += "rotations in the order given:<br><br>";
+          createRotations(2, 2, 2, r);
+          s += "<br>   7) What are the coordinates of the nose after these rotations?<br>"
+          s += "   8) What are the coordinates of the left wingtip after these rotations?<br><br>"
+
+          s += "-------------------------------------------------------------------------------------------------<br><br>"
+
+          xt = Math.trunc(100 * (2.5 + r.nextFloat())) / 100;
+          yt = Math.trunc(100 * (2.5 + r.nextFloat())) / 100;
+          zt = Math.trunc(100 * (2.5 + r.nextFloat())) / 100;
+          
+          s += "Question 9 (2 points):<br><br>"
+          s += "Consider a triangle in a right-handed coordinate system with corners at these three<br>"
+          s += "sets of (x, y, z) coordinates:<br><br>";
+          s += `      P1 = (${xt}, 0, 0), P2 = (0, ${yt}, 0), P3 =  (0, 0, ${zt})<br><br>`
+          s += "   9) If we are using a clockwise winding visibility rule, and the points are listed in order<br>"
+          s += "      P1, P2, P3, is this triangle visible from the point located at coordinates (1, 1, 1)?</pre>"
+
+        }
+
+        p.innerHTML = s;
+      }
+
+      function createRotations(numRots090, numRots180, numRots270, rand)
+      {
+        // Add up the total number of rotations.
+        
+        numRots = numRots090 + numRots180 + numRots270;
+
+        // rotsDeck will be our "deck of cards" of randomly made
+        // rotations. We will deal from it randomly into rotsList,
+        // so we can use rotsList as our actual ordered list of
+        // random rotations (same as dealing cards at random).
+        
+        rotsDeck = [];
+        rotsList = [];
+        
+        // Construct the deck, 90s first, then 180s, then 270s.
+        
+        rotIndex = 0;
+        
+        for (i = 0; i < numRots090; ++i)
+        {
+          rotsDeck[rotIndex++] = 90;
+        }
+        
+        for (i = 0; i < numRots180; ++i)
+        {
+          rotsDeck[rotIndex++] = 180;
+        }
+        
+        for (i = 0; i < numRots270; ++i)
+        {
+          rotsDeck[rotIndex++] = 270;
+        }
+
+        // Track the number of undealt rotations in the deck.
+        
+        numUndealt = numRots;
+
+        // Pick rotations at random to build the list.
+        
+        for (nextRotIndex = 0; nextRotIndex < numRots; ++nextRotIndex)	
+        {
+          // Pick a rotation.
+          
+          randDeckIndex = rand.nextInt(numUndealt);
+
+          // Make it the next one in the list.
+          
+          rotsList[nextRotIndex] = rotsDeck[randDeckIndex];
+
+          // Flip a coin to set this rotation positive or negative.
+          
+          rotsList[nextRotIndex] *= (rand.nextInt(2) == 1 ? 1 : -1);
+          
+          // Take one away from the number left to deal.
+          
+          numUndealt = numUndealt - 1;
+          
+          // Move the last rot in the deck into the place of
+          // the one we just dealt.
+          
+          rotsDeck[randDeckIndex] = rotsDeck[numUndealt];
+        }
+
+        // Parallel arrays are a code smell, but we'll use
+        // them cautiously here to hold the list of axes.
+        
+        axesList = [];
+
+        // Start with the last axis used as Q, for "none," then
+        // choose an axis for each rotation in the list.
+        
+        lastAxis = axes[0];
+        
+        for (nextRotIndex = 0; nextRotIndex < numRots; ++nextRotIndex)
+        {
+          // Get the axis for the next rotation.
+          
+          axesList[nextRotIndex] = nextAxis(lastAxis, rand);
+          
+          // Add this rotation.
+          
+          s += `      Around the ${axesList[nextRotIndex]}-axis by ${rotsList[nextRotIndex]} degrees.<br>`;
+          
+          // Make sure we don't rotate twice around the same axis.
+          
+          lastAxis = axesList[nextRotIndex];
+        }
+      }
+
+      function nextAxis(excludedAxis, rand)
+      {
+        switch (excludedAxis)
+        {
+        case 'X':
+          next = rand.nextInt(2) == 1 ? 'Y' : 'Z';
+          break;
+          
+        case 'Y':
+          next = rand.nextInt(2) == 1 ? 'X' : 'Z';
+          break;
+          
+        case 'Z':
+          next = rand.nextInt(2) == 1 ? 'X' : 'Y';
+          break;
+
+        default:
+          next = axes[rand.nextInt(3) + 1];
+          break;
+        }
+        
+        return next;
+      }
+
+      class Rando
+      {
+
+          // LCGs use S(i) = (S(i-1) * a + c) % m to generate pseudorandom
+          // numbers. This one would have short periods for its least
+          // significant bits, so we only use the high 15 bits.
+
+          // Making this static avoids wasted space. The # symbol
+          // makes them private as well, so they are not readable or
+          // changeable outside the class.
+
+          static #m = 2147483648;
+          static #a = 214013;
+          static #c = 2531011;
+          
+          // Note that the constructor can create public members
+          // just by assigning something to them, but private
+          // members need to be declared.
+
+          #s;
+
+          constructor(s)
+          {
+              this.#s = s;
+          }
+
+
+          // We can ask for the next value in the range [0, 32767].
+
+          next()
+          {
+              // Note that local member functions need "this" as
+              // a prefix.
+
+              this.#nextS();
+
+              // Local member variables need "this" too.
+
+              return this.#s >> 16;
+          }
+          
+          // Get the next integer value, mapped to [0, max).
+
+          nextInt(max)
+          {
+              return Math.floor(max * this.nextFloat());
+          }
+          
+          // Get next real value, mapped to [0, 1).
+
+          nextFloat()
+          {
+              this.#nextS();
+              return (this.#s >> 16) / 32768;
+          }
+          
+          // Compute the next value in the sequence.
+          //
+          // Note all the "this" prefixes and the # symbols.
+          
+          #nextS()
+          {
+              this.#s = (this.#s * Rando.#a + Rando.#c) % Rando.#m;
+          }
+      }
+    </script>
+  </body>
+</html>
