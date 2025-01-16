@@ -7,12 +7,16 @@ Some text on another line.
 
 ## Header 2
 
-Yes, text. And HTML. And code.
+Yes, text. And HTML. And code. And a button.
 <p>Does this show up?</p>
 <p id="line">---</p>
+<button onclick='btnRead()'>Run!</button>
 <script>
-line = document.getElementById("line")
-line.innerHTML = "Yowza!"
+function btnRead()
+{
+	line = document.getElementById("line")
+	line.innerHTML = "Yowza!"
+}
 </script>
 
 ### Header 3
