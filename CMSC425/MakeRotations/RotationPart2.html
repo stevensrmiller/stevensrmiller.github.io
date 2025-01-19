@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>
@@ -31,7 +32,8 @@
         {
           const r = new Rando(nuid);
           
-          s = "<pre>Questions 3 & 4:<br><br>";
+          s = "<pre>"
+          s += "Questions 3 & 4:<br><br>";
           s += "Use the same airplane in the same initial configuration, and in the same set of axes,<br>";
           s += "for the first part of this assignment. Using a right-handed rotation rule, apply these<br>";
           s += "rotations in the order given:<br><br>";
@@ -70,7 +72,13 @@
           s += "sets of (x, y, z) coordinates:<br><br>";
           s += `      P1 = (${xt}, 0, 0), P2 = (0, ${yt}, 0), P3 =  (0, 0, ${zt})<br><br>`
           s += "   9) If we are using a clockwise winding visibility rule, and the points are listed in order<br>"
-          s += "      P1, P2, P3, is this triangle visible from the point located at coordinates (1, 1, 1)?</pre>"
+          s += "      P1, P2, P3, is this triangle visible from the point located at coordinates (1, 1, 1)?<br><br>"
+          s += "Hint: Triangles lie in a plane. The equation for a plane that includes the origin is ax + by + cz = 0.<br>"
+          s += "The equation for a plane that does not include the origin is ax + by + cz = 1. You have three points<br>"
+          s += "that will let you find a, b, and c by solving a system of simultaneous equations. Because most of the<br>"
+          s += "coordinates are zeroes, set up the system and you will see that solving it is easy. After that, consider<br>"
+          s += "ways you can decide which side of a plane a point is on."
+          s += "</pre>"
 
         }
 
@@ -192,68 +200,66 @@
 
       class Rando
       {
+        // LCGs use S(i) = (S(i-1) * a + c) % m to generate pseudorandom
+        // numbers. This one would have short periods for its least
+        // significant bits, so we only use the high 15 bits.
 
-          // LCGs use S(i) = (S(i-1) * a + c) % m to generate pseudorandom
-          // numbers. This one would have short periods for its least
-          // significant bits, so we only use the high 15 bits.
+        // Making this static avoids wasted space. The # symbol
+        // makes them private as well, so they are not readable or
+        // changeable outside the class.
 
-          // Making this static avoids wasted space. The # symbol
-          // makes them private as well, so they are not readable or
-          // changeable outside the class.
+        static #m = 2147483648;
+        static #a = 214013;
+        static #c = 2531011;
+        
+        // Note that the constructor can create public members
+        // just by assigning something to them, but private
+        // members need to be declared.
 
-          static #m = 2147483648;
-          static #a = 214013;
-          static #c = 2531011;
-          
-          // Note that the constructor can create public members
-          // just by assigning something to them, but private
-          // members need to be declared.
+        #s;
 
-          #s;
+        constructor(s)
+        {
+            this.#s = s;
+        }
 
-          constructor(s)
-          {
-              this.#s = s;
-          }
+        // We can ask for the next value in the range [0, 32767].
 
+        next()
+        {
+            // Note that local member functions need "this" as
+            // a prefix.
 
-          // We can ask for the next value in the range [0, 32767].
+            this.#nextS();
 
-          next()
-          {
-              // Note that local member functions need "this" as
-              // a prefix.
+            // Local member variables need "this" too.
 
-              this.#nextS();
+            return this.#s >> 16;
+        }
+        
+        // Get the next integer value, mapped to [0, max).
 
-              // Local member variables need "this" too.
+        nextInt(max)
+        {
+            return Math.floor(max * this.nextFloat());
+        }
+        
+        // Get next real value, mapped to [0, 1).
 
-              return this.#s >> 16;
-          }
-          
-          // Get the next integer value, mapped to [0, max).
-
-          nextInt(max)
-          {
-              return Math.floor(max * this.nextFloat());
-          }
-          
-          // Get next real value, mapped to [0, 1).
-
-          nextFloat()
-          {
-              this.#nextS();
-              return (this.#s >> 16) / 32768;
-          }
-          
-          // Compute the next value in the sequence.
-          //
-          // Note all the "this" prefixes and the # symbols.
-          
-          #nextS()
-          {
-              this.#s = (this.#s * Rando.#a + Rando.#c) % Rando.#m;
-          }
+        nextFloat()
+        {
+            this.#nextS();
+            return (this.#s >> 16) / 32768;
+        }
+        
+        // Compute the next value in the sequence.
+        //
+        // Note all the "this" prefixes and the # symbols.
+        
+        #nextS()
+        {
+            this.#s = (this.#s * Rando.#a + Rando.#c) % Rando.#m;
+        }
       }
     </script>
   </body>
