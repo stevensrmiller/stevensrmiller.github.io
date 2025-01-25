@@ -6,6 +6,8 @@ First up, here I am, as my University picture doesn't really resemble me anymore
 
 ![A white man in his sixties in a blue shirt in front of white cupboards. He has steel gray hair and a rakish beard shot through with salt and pepper. He has gold half-frame glasses. He is smiling for some reason.](./srm.png)
 
+Contact by email at stevensm@umd.edu, or text me at 703-217-0862.
+
 ## Class Participation
 
 If your schedule allows it, it's nice to have you in the classroom when I'm teaching. A lot of class time goes into project work or assignments. Having you there can be a big help to the students who might need some guidance when I'm already working with someone, or when maybe a different perspective is what a student needs to understand something they're having trouble with.
