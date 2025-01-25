@@ -6,7 +6,7 @@ First up, here I am, as my University picture doesn't really resemble me anymore
 
 ![A white man in his sixties in a blue shirt in front of white cupboards. He has steel gray hair and a rakish beard shot through with salt and pepper. He has gold half-frame glasses. He is smiling for some reason.](./srm.png)
 
-Contact by email at stevensm@umd.edu, or text me at 703-217-0862.
+Contact me by email at stevensm@umd.edu, or text me at 703-217-0862.
 
 ## Class Participation
 
