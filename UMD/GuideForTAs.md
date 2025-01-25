@@ -30,7 +30,11 @@ Very often, we can let each other know of any minor issues, or that there are no
 
 ### Absences
 
-If you will be absent from campus at any time this semester, please tell me _as early as you can_, so I can schedule around it. It's perfectly okay to travel for conferences, special events, and so on. Just tell me as soon as you know that you are going to be gone, so we can avoid any problems that creates.
+If you will be absent from campus at any time this semester, please tell me _as early as you can_, so I can schedule around it. It's perfectly okay to travel for conferences, special events, and so on. Just tell me by emails as soon as you know that you are going to be gone, so we can avoid any problems that creates.
+
+### Speaking of Email
+
+Please talk to the department staff about getting a "umd.edu" email address if you don't already have one. This is necessary for privacy reasons when you communicate with students. If you currently only have a "terpmail.umd.edu" address, talk to the staff right away so you can have a "umd.edu" address assigned. Until you get one, you can talk to the students about issues relating to class work, but don't discuss their grades using your "terpmail.umd.edu" address.
 
 ## If There is Another TA
 
