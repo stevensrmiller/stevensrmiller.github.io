@@ -4,11 +4,7 @@ Thanks for being a Teaching Assistant for me this term. I've put together a few 
 
 First up, here I am, as my University picture doesn't really resemble me anymore:
 
-<center>
-
-![A white man in his sixties in a blue shirt in front of white cupboards. He has steel gray hair and a rakish beard shot through with salt and pepper. He has gold half-frame glasses. He is smiling for some reason.](srm.png)
-
-</center>
+![A white man in his sixties in a blue shirt in front of white cupboards. He has steel gray hair and a rakish beard shot through with salt and pepper. He has gold half-frame glasses. He is smiling for some reason.](./srm.png)
 
 ## Class Participation
 
