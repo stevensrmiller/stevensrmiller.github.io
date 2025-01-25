@@ -63,7 +63,7 @@ If you split the grading work with another TA, please pay close attention to the
 ### Accepting Late Work
 
 My official policy is that __There Is No Late Work__. However, in 
-practice, I do give extensions when people need them for a valid reason. So if someone turns in work after the deadline, please note that it was late (ELMS does this automatically for work submittied on ELMS, which is usually how we'll get it), but grade it normally. I'll handle any penalties.
+practice, I do give extensions when people need them for a valid reason. So if someone turns in work after the deadline, please note that it was late (ELMS does this automatically for work submitted on ELMS, which is usually how we'll get it), but grade it normally. I'll handle any penalties.
 
 ### Publishing Grades
 
