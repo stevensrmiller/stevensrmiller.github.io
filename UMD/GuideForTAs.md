@@ -30,7 +30,7 @@ Very often, we can let each other know of any minor issues, or that there are no
 
 ### Absences
 
-If you will be absent from campus at any time this semester, please tell me _as early as you can_, so I can schedule around it. It's perfectly okay to travel for conferences, special events, and so on. Just tell me by emails as soon as you know that you are going to be gone, so we can avoid any problems that creates.
+If you will be absent from campus at any time this semester, please tell me _as early as you can_, so I can schedule around it. It's perfectly okay to travel for conferences, special events, and so on. Just tell me by email as soon as you know that you are going to be gone, so we can avoid any problems that creates.
 
 ### Speaking of Email
 
@@ -40,7 +40,7 @@ Please talk to the department staff about getting a "umd.edu" email address if y
 
 ### Work Together
 
-Most of my courses either have more than one TA, or else I have more than one section and each section has its own TA. Regardless, if there is another TA assisting me with the same course (either because you have been assigned with another, or you are the only TA in your section, but there is another TA in another section), please cooperate and coordinate the work with each other. All students in my courses get the same assignments, regardless of which section they are in. And, as with in-class help. sometimes what a student needs is just to work out a problem with a different person helping them.
+Most of my courses either have more than one TA, or else I have more than one section and each section has its own TA. Regardless, if there is another TA assisting me with the same course (either because you have been assigned with another, or you are the only TA in your section, but there is another TA in another section), please cooperate and coordinate the work with each other. All students in my courses get the same assignments, regardless of which section they are in. And, as with in-class help, sometimes what a student needs is just to work out a problem with a different person helping them.
 
 ### Shared Grading
 
