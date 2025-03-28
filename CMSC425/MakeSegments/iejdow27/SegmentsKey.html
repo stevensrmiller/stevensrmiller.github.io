@@ -262,8 +262,31 @@ function inside(f, t, r)
 function solve(x1, y1, x2, y2, x1p, y1p, x2p, y2p)
 {
 	// You're kidding, right?
+	
+	v =   ((x1p - x1) * (y2 - y1) + (x2 - x1) * (y1 - y1p))
+	    / ((x2 - x1) * (y2p - y1p) - (x2p - x1p) * (y2 - y1))
+		
+	u =   ((x1p - x1) * (y2p - y1p) + (x2p - x1p) * (y1 - y1p))
+	    / ((x2 - x1) * (y2p - y1p) - (x2p - x1p) * (y2 - y1))
+	
+	s = "The segments "
+	
+	if (u < 0 || u > 1 || v < 0 || v > 1)
+	{
+		s += "do NOT "
+	}
+	
+	s += `intersect: u = ${u.toFixed(2)}, v = ${v.toFixed(2)}<br><br>`
+	
+	xi = x1 + u * (x2 - x1)
+	yi = y1 + u * (y2 - y1)
+	xip = x1p + v * (x2p - x1p)
+	yip = y1p + v * (y2p - y1p)
 
-	return ""
+	xi = Number(xi)
+	//s += `lines intersect at x = ${xi.toFixed(2)}, y = ${yi.toFixed(2)}<br>`
+    s += `lines intersect at x = ${xip.toFixed(2)}, y = ${yip.toFixed(2)}<br><br><br>`
+	return s
 }
 </script>
 </body>
