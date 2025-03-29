@@ -164,8 +164,8 @@ function segments()
 
 		y2p = inside(r[0], r[1], rando.nextFloat())
 
-        s = s + `Segment S : (x1  = ${six(x1)}  y1  = ${six(y1)})  (x2  = ${six(x2)}  y2  = ${six(y2)})<br>`
-        s = s + `Segment S': (x1' = ${six(x1p.toFixed(2))}  y1' = ${six(y1p)})  (x2' = ${six(x2p)}  y2' = ${six(y2p)})<br>`
+        s = s + `Segment S : (x1  = ${six(x1.toFixed(2))}  y1  = ${six(y1.toFixed(2))})  (x2  = ${six(x2.toFixed(2))}  y2  = ${six(y2.toFixed(2))})<br>`
+        s = s + `Segment S': (x1' = ${six(x1p.toFixed(2))}  y1' = ${six(y1p.toFixed(2))})  (x2' = ${six(x2p.toFixed(2))}  y2' = ${six(y2p.toFixed(2))})<br>`
         s = s + "<br>"
 
 		s = s + solve(x1, y1, x2, y2, x1p, y1p, x2p, y2p);
