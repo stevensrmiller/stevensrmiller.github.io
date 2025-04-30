@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Line Segments</h2>
+
+<pre>
+Enter your 9-digit UID and press the "Generate" button. You will get
+your own set of three pairs of line segments. For each pair, each of
+the segments defines a line that intersects with the other line in
+that pair. You want to figure out if each of the lines intersects
+the other inside the endpoints of the segments. If so, we would
+consider that a collision. If either line intersects the other line
+outside the endpoints of the other line's segment, or they both
+intersect each other outside the endpoints of their segments, we
+would not consider that a collision.
+
+Use your solutions to the parametric expressions for intersecting lines
+to determine what the parameter values are for the intersection of
+each of the lines defined by the segments below. Indicate whether
+or not the lines intersect inside the endpoints of the segments of
+both lines by referring to the parameter values you find.
+
+A given segment, S, runs from point P1 to point P2. The coordinates
+of P1 are (x1, y1), and the coordinates of P2 are (x2, y2).
+
+Similarly, segment S' runs from point P1' to point P2', with the
+coordinates of P1' being (x1', y1'), and of P2' being (x2', y2').
+</pre>
+
+<input type="text" id="textBox" value="000000001">
+
+<button type="button"
+onclick="document.getElementById('outputArea').innerHTML = segments()">
+Generate</button>
+
+<p id="outputArea"></p>
+
+<script>
+
+function segments()
+{
+	uid = document.getElementById("textBox").value;
+
+	nuid = Number(uid);
+
+	if (isNaN(nuid) || nuid === 0 || uid.length != 9)
+	{
+	  s = "<pre>Be sure you enter nine digits and no other characters<br>";
+	  s += `You entered this: "${uid}"<\pre>`
+	}
+	else
+	{
+	rangePairSets = [
+					  [  //  x    x      y    y
+						[//min  max    min  max
+						  [ -9,  -5], [ 10,  14], // S from
+						],
+						[
+						  [ 11,  14], [  1,   4], // S to
+						],
+						[
+						  [-12,  -9], [ -5,  -2], // S'from 
+						],
+						[
+						  [  5,  11], [ 14,  20], // S'to
+						],
+					  ],
+					  [  //  x    x      y    y
+						[//min  max    min  max
+						  [ -8,  -3], [ 12,  17], // S from
+						],
+						[
+						  [ 10,  14], [  1,   5], // S to
+						],
+						[
+						  [-10,  -7], [ -6,  -3], // S'from 
+						],
+						[
+						  [ -3,  -1], [  2,   4], // S'to
+						],
+					  ],
+					  [  //  x    x      y    y
+						[//min  max    min  max
+						  [ -3,  -1], [ 15,  17], // S from
+						],
+						[
+						  [  5,   7], [ 10,  12], // S to
+						],
+						[
+						  [  2,   4], [-10,  -8], // S'from 
+						],
+						[
+						  [  8,  10], [ -5,  -3], // S'to
+						],
+					  ],
+					]     
+
+	rando = new Rando(nuid)
+    
+    s = "<pre>"
+    
+    // Choose each of the rangePairSets one at a time, at random.
+    
+    rpsIndexMax = 2;
+    
+    headings = ["<b>Part B(i):</b><br>", "<b>Part B(ii):</b><br>", "<b>Part B(iii):</b><br>"]
+
+    for (rpsNum = 0; rpsNum < 3; rpsNum++)
+    {
+    	s = s + headings[rpsNum]
+        
+    	rpsIndex = rando.nextInt(rpsIndexMax + 1)
+        
+        rps = rangePairSets[rpsIndex]
+
+		// Get the coordinates of the line segments.
+
+		// From 1
+        
+        rp = rps[0]
+        
+        r = rp[0]
+        
+        x1 = inside(r[0], r[1], rando.nextFloat())
+        
+        r = rp[1]
+
+		y1 = inside(r[0], r[1], rando.nextFloat())
+        
+        // To 1
+        
+        rp = rps[1]
+        
+        r = rp[0]
+        
+        x2 = inside(r[0], r[1], rando.nextFloat())
+        
+        r = rp[1]
+
+		y2 = inside(r[0], r[1], rando.nextFloat())
+        
+        // From 2
+        
+        rp = rps[2]
+        
+        r = rp[0]
+        
+        x1p = inside(r[0], r[1], rando.nextFloat())
+        
+        r = rp[1]
+
+		y1p = inside(r[0], r[1], rando.nextFloat())
+        
+        // To 2
+        
+        rp = rps[3]
+        
+        r = rp[0]
+        
+        x2p = inside(r[0], r[1], rando.nextFloat())
+        
+        r = rp[1]
+
+		y2p = inside(r[0], r[1], rando.nextFloat())
+
+        s = s + `Segment S : (x1  = ${six(x1)}  y1  = ${six(y1)})  (x2  = ${six(x2)}  y2  = ${six(y2)})<br>`
+        s = s + `Segment S': (x1' = ${six(x1p.toFixed(2))}  y1' = ${six(y1p)})  (x2' = ${six(x2p)}  y2' = ${six(y2p)})<br>`
+        s = s + "<br>"
+
+		s = s + solve(x1, y1, x2, y2, x1p, y1p, x2p, y2p);
+		
+        rangePairSets[rpsIndex] = rangePairSets[rpsIndexMax]
+        rpsIndexMax--
+    }
+    
+    s = s + "</pre>"
+	}
+	
+    return s
+}
+
+function six(n)
+{
+	s = `      ${n}`
+    ln = s.length
+    return s.substring(ln-6, ln)
+}
+
+function inside(f, t, r)
+{
+	v = f + r * (t - f)
+    
+    v = Math.trunc(v * 100) / 100
+    
+	return v
+}
+      class Rando
+      {
+        // LCGs use S(i) = (S(i-1) * a + c) % m to generate pseudorandom
+        // numbers. This one would have short periods for its least
+        // significant bits, so we only use the high 15 bits.
+
+        // Making this static avoids wasted space. The # symbol
+        // makes them private as well, so they are not readable or
+        // changeable outside the class.
+
+        static #m = 2147483648;
+        static #a = 214013;
+        static #c = 2531011;
+        
+        // Note that the constructor can create public members
+        // just by assigning something to them, but private
+        // members need to be declared.
+
+        #s;
+
+        constructor(s)
+        {
+            this.#s = s;
+        }
+
+        // We can ask for the next value in the range [0, 32767].
+
+        next()
+        {
+            // Note that local member functions need "this" as
+            // a prefix.
+
+            this.#nextS();
+
+            // Local member variables need "this" too.
+
+            return this.#s >> 16;
+        }
+        
+        // Get the next integer value, mapped to [0, max).
+
+        nextInt(max)
+        {
+            return Math.floor(max * this.nextFloat());
+        }
+        
+        // Get next real value, mapped to [0, 1).
+
+        nextFloat()
+        {
+            this.#nextS();
+            return (this.#s >> 16) / 32768;
+        }
+        
+        // Compute the next value in the sequence.
+        //
+        // Note all the "this" prefixes and the # symbols.
+        
+        #nextS()
+        {
+            this.#s = (this.#s * Rando.#a + Rando.#c) % Rando.#m;
+        }
+      }
+
+function solve(x1, y1, x2, y2, x1p, y1p, x2p, y2p)
+{
+	// You're kidding, right?
+	
+	v =   ((x1p - x1) * (y2 - y1) + (x2 - x1) * (y1 - y1p))
+	    / ((x2 - x1) * (y2p - y1p) - (x2p - x1p) * (y2 - y1))
+		
+	u =   ((x1p - x1) * (y2p - y1p) + (x2p - x1p) * (y1 - y1p))
+	    / ((x2 - x1) * (y2p - y1p) - (x2p - x1p) * (y2 - y1))
+	
+	s = "The segments "
+	
+	if (u < 0 || u > 1 || v < 0 || v > 1)
+	{
+		s += "do NOT "
+	}
+	
+	s += `intersect: u = ${u.toFixed(2)}, v = ${v.toFixed(2)}<br><br>`
+	
+	xi = x1 + u * (x2 - x1)
+	yi = y1 + u * (y2 - y1)
+	xip = x1p + v * (x2p - x1p)
+	yip = y1p + v * (y2p - y1p)
+
+	xi = Number(xi)
+	//s += `lines intersect at x = ${xi.toFixed(2)}, y = ${yi.toFixed(2)}<br>`
+    s += `lines intersect at x = ${xip.toFixed(2)}, y = ${yip.toFixed(2)}<br><br><br>`
+	return s
+}
+</script>
+</body>
+</html> 
